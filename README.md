@@ -1,13 +1,7 @@
-# UCI Transfer Equivalency Reverse Search
-Students who wish to transfer from a California Community College (CCC) to a University of California (UC) or California State University (CSU) school predominantly use [Assist](https://www.assist.org) to find official course equivalencies. Assist is a unidirectional search: students enter their CCC, the CSU or UC to which they want to transfer, and their major, and Assist delineates the courses that fulfill the corresponding requirements. 
+# UC Berkeley Transfer Equivalency Reverse Search
+this project was originally forked from [ccc_transfers](https://github.com/jacobtbigham/ccc_transfers). many thanks to jacob bigham for creating this tool.
 
-I offer here the ability to reverse that search, allowing students to start with a specific UC or CSU course requirement and then find all CCCs that offer an equivalent course. This is especially useful during the COVID-19 era, in which students can take classes online from schools across California. For the sake of simplicity (and personal relevance), I've limited my approach to UCI ICS (Information and Computer Sciences) equivalencies, but the scripts I've included provide a strong point of departure for processing the Assist agreements for other schools.
-
-I've used the data acquired from the scripts in this repository to create a search tool that displays requirements on [my website](https://www.jacobtbigham.com/transfers):
-
-![Layout for UCI transfer reverse search](https://www.jacobtbigham.com/static/img/transfers/transfer.PNG)
-
-For a **tl;dr** (just show me the code) version of this information, see [here](#tldr).
+[assist.org](https://www.assist.org) is a site that i've used often as a UC Berkeley student because it provides courses at california community colleges (CCC) that have been officially approved for equivalency with my major or breadth requirements. however, the site only allows you to search the articulation agreement between one ccc and university of california (uc) or california state university (csu) campus at a time, meaning that finding an equivalent course for any specific requirement requires manually searching the articulation agreement with every ccc.  
 
 ## The Problem: Why hasn't this been done already?
 
