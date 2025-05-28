@@ -35,8 +35,11 @@ class DatabaseMaker():
                               'from_school': self.names[from_school_id],
                               'equiv': classes[to_class],
                               'key': id_to_key[from_school_id]}
+                print('adding class...')
                 self.database[to_class].append(from_class)
+        print('alphabetizing classes...')
         self.database = self.alphabetize_class_dict(self.database)
+        print('json being created...')
         json_name = f'agreements/{self.school_name}/{self.major_code}.json'
         with open(json_name, "w") as out_file: 
             json.dump(self.database, out_file, indent=4)
