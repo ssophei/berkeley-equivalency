@@ -7,10 +7,11 @@ from selenium.webdriver.chrome.options import Options
 import base64
 
 class PDFGrabber():
-    def __init__(self, school_id=79, major='Computer Science, B.A.', major_code='CS'):
+    def __init__(self, school_id=79, major='Computer Science, B.A.', major_nickname='CS', delay=0.5):
         self.school_id = school_id
         self.major = major
-        self.major_code = major_code
+        self.major_nickname = major_nickname
+        self.delay = delay
     
     def get_agreements(self):
         with urllib.request.urlopen(f'https://assist.org/api/institutions/{self.school_id}/agreements') as url:
@@ -42,12 +43,12 @@ class PDFGrabber():
                     curr = {'key': report['key'], 'school_id': school_id, 'year': year}
                     keys.append(curr)
                     print(curr)
-        with open(f'keys/{self.school_id}_{self.major_code}_keys.json', 'w') as outfile:
+        with open(f'keys/{self.school_id}_{self.major_nickname}_keys.json', 'w') as outfile:
             json.dump(keys, outfile)
         return keys
     
     def get_pdfs(self):
-        with open(f'keys/{self.school_id}_{self.major_code}_keys.json', 'r') as infile:
+        with open(f'keys/{self.school_id}_{self.major_nickname}_keys.json', 'r') as infile:
             keys = json.load(infile)
         id_to_key = {} # helps remove duplicates
         options = Options()
@@ -68,10 +69,10 @@ class PDFGrabber():
                 time.sleep(5)
                 pdf = driver.print_page()
                 pdf_bytes = base64.b64decode(pdf)
-                with open(f'pdfs/{self.major_code}/'
-                          f'to{self.school_id}_{self.major_code}_from{school_id}_in{year}.pdf', 'wb') as file:
+                with open(f'pdfs/{self.major_nickname}/'
+                          f'to{self.school_id}_{self.major_nickname}_from{school_id}_in{year}.pdf', 'wb') as file:
                     file.write(pdf_bytes)
-                print(f'{self.major_code} agreement from {1950 + year} saved!'
+                print(f'{self.major_nickname} agreement from {1950 + year} saved!'
                       f'(receiving: {self.school_id}, sending: {school_id})')
         driver.quit
         return id_to_key
