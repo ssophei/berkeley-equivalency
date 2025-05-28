@@ -7,11 +7,10 @@ from selenium.webdriver.chrome.options import Options
 import base64
 
 class PDFGrabber():
-    def __init__(self, school_id=79, major='Computer Science, B.A.', major_code='CS', delay=0.5):
+    def __init__(self, school_id=79, major='Computer Science, B.A.', major_code='CS'):
         self.school_id = school_id
         self.major = major
         self.major_code = major_code
-        self.delay = delay
     
     def get_agreements(self):
         with urllib.request.urlopen(f'https://assist.org/api/institutions/{self.school_id}/agreements') as url:
@@ -48,37 +47,29 @@ class PDFGrabber():
         return keys
     
     def get_pdfs(self):
-        with open('79_CS_keys.json', 'r') as infile:
+        with open('keys/79_CS_keys.json', 'r') as infile:
             keys = json.load(infile)
+        id_to_key = {} # helps remove duplicates
         options = Options()
         options.add_argument('--headless')
         driver = webdriver.Chrome(options=options)
-        driver.get('https://assist.org/transfer/results?year=75'
-                '[&institution=79&agreement=2'
-                '&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false'
-                '&viewByKey=75%2F2%2Fto%2F79%2FMajor%2Ffc50cced-05c2-43c7-7dd5-08dcb87d5deb')
-        time.sleep(5)
-        pdf = driver.print_page()
-        pdf_bytes = base64.b64decode(pdf)
-        with open('75_2_79_CS.pdf', 'wb') as file:
-            file.write(pdf_bytes)
+        for key in keys:
+            if key['key'] not in id_to_key.values():
+                key_val = key['key']
+                school_id = key['school_id']
+                year = key['year']
+                id_to_key[school_id] = key_val
+                encoded_key = urllib.parse.quote(key_val, safe='')
+                agreement_url = (f'https://assist.org/transfer/results?year={year}'
+                f'[&institution={self.school_id}&agreement={school_id}'
+                f'&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false'
+                f'&viewByKey={encoded_key}')
+                driver.get(agreement_url)
+                time.sleep(5)
+                pdf = driver.print_page()
+                pdf_bytes = base64.b64decode(pdf)
+                with open(f'pdfs/to{self.school_id}_{self.major_code}_from{school_id}_in{year}.pdf', 'wb') as file:
+                    file.write(pdf_bytes)
+                print(f'articulation between uc {self.school_id} and csu/ccc {school_id} for {self.major_code} from {1950 + year} saved!')
         driver.quit
-        print('succeess!')
-        # id_to_key = {} # helps remove duplicates
-        # for key in keys:
-        #     if key['key'] not in id_to_key.values():
-        #         key_val = key['key']
-        #         school_id = key['school_id']
-        #         year = key['year']
-        #         id_to_key[school_id] = key_val
-        #         encoded_key = urllib.parse.quote(key_val, safe='')
-        #         referer = (f'https://assist.org/transfer/results?year={year}'
-        #         f'[&institution={self.school_id}&agreement={school_id}'
-        #         f'&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false'
-        #         f'&viewByKey={encoded_key}')
-        #         pdf_url = f'https://assist.org/api/artifacts/{key_val}'
-        #         file_name = f'agreements/report_{self.school_id}_{school_id}_{self.major_code}.pdf'
-        #         with open(file_name, 'wb') as f:
-        #             f.write(urllib.request.urlopen(pdf_url).read())
-        #         time.sleep(self.delay)
-        # return id_to_key
+        return id_to_key
