@@ -1,7 +1,7 @@
 # UC Berkeley Transfer Equivalency Reverse Search
 this project was originally forked from [ccc_transfers](https://github.com/jacobtbigham/ccc_transfers). many thanks to jacob bigham for creating this tool!
 
-[assist.org](https://www.assist.org) is a site that i've used often as a UC Berkeley student because it provides courses at california community colleges (CCC) that have been officially approved for equivalency with my major or breadth requirements. however, the site only allows you to search the articulation agreement between one ccc and university of california (uc) or california state university (csu) campus at a time, meaning that finding an equivalent course for any specific requirement requires manually searching the articulation agreement with every ccc, which becomes difficult when there are over *100* articulation agreements. 
+[assist.org](https://www.assist.org) is a site that i've used often as a UC Berkeley student because it provides courses at california community colleges (CCC) that have been officially approved for equivalency with my major or breadth requirements. however, the site only allows you to search the articulation agreement between one ccc and university of california (uc) or california state university (csu) campus at a time, meaning that finding an equivalent course for any specific requirement requires manually searching the articulation agreement with every ccc, which becomes difficult when there are over **100** articulation agreements. 
 
 ## The Problem: Why hasn't this been done already?
 
@@ -22,10 +22,13 @@ So, to build a reverse Assist search, you have to first find all relevant PDFs, 
 ## A Solution: My approach and the scripts in this repository
 
 ### 1. Finding and Downloading PDFs
-Each articulation agreement has a unique ID number, which you can access from the Assist API if you know the receiving school (UC/CSU) ID, sending school (CCC) ID, year code, and major. For example, https://assist.org/api/agreements?receivingInstitutionId=76&sendingInstitutionId=113&academicYearId=72&categoryCode=major will direct you to a JSON file with the agreement ID numbers (keys) for students transferring from De Anza College (school ID 113) to Cal State Los Angeles (school ID 76) for the 2021-2022 year (year ID 72). By default, I grab only the most recent—valid—agreements
+when i first began using the [original]([url](https://github.com/jacobtbigham/ccc_transfers?tab=readme-ov-file#1-finding-and-downloading-pdfs)) method of finding pdfs, i quickly realized that the assist API structure had been updated. it is still true that you can access the key for any particular agreement, but you can no longer access its pdf through https://assist.org/api/artifacts/{key_val} (at least if you're using a key from a 2025 agreement).
 
+this information from the original method is still relevant as of may 2025, so i'll leave it below:
+> Each articulation agreement has a unique ID number, which you can access from the Assist API if you know the receiving school (UC/CSU) ID, sending school (CCC) ID, year code, and major. For example, https://assist.org/api/agreements?receivingInstitutionId=76&sendingInstitutionId=113&academicYearId=72&categoryCode=major will direct you to a JSON file with the agreement ID numbers (keys) for students transferring from De Anza College (school ID 113) to Cal State Los Angeles (school ID 76) for the 2021-2022 year (year ID 72). By default, I grab only the most recent valid agreements. 
+>
 School IDs are available at https://assist.org/api/institutions, and year IDs are simply years since 1950 (so, for example, year ID 49 would be the 1998-1999 cycle).
-
+>
 To find which schools have articulation agreements with each other, visit, for example, https://assist.org/api/institutions/113/agreements. That takes you to a JSON file with all schools that have articulation agreements with Cal State Los Angeles and the years for which they have agreements stored on Assist.
 
 Once you have the key for a particular agreement, you can access the PDF at https://assist.org/api/artifacts/{key_val}. For instance, the key for the 2021-2022 articulation agreement for Nursing - B.S. from De Anza College to Cal State Los Angeles is 25330408, so https://assist.org/api/artifacts/25330408 takes you to that agreement.
