@@ -18,8 +18,9 @@ def scrape():
     courses = soup.find_all('div', class_='courseLine')
     for course in courses:
         if course.find_parent(class_='rowReceiving'):
-            receiving_course = course.find_next(class_='prefixCourseNumber')
-            print(receiving_course.text.strip())
+            receiving_course_number = course.find_next(class_='prefixCourseNumber')
+            recieving_course_title = course.find_next(class_='courseTitle')
+            print(f'{receiving_course_number.text.strip()}: {recieving_course_title.text.strip()}')
 
 if __name__ == '__main__':
     scrape()
