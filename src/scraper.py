@@ -14,27 +14,18 @@ def scrape():
     time.sleep(5)
     
     soup = BeautifulSoup(driver.page_source, 'html.parser')
-    
-    # courses = soup.find_all('div', class_='courseLine')
-    # for course in courses:
-    #     course_number = course.find_next(class_='prefixCourseNumber')
-    #     course_title = course.find_next(class_='courseTitle')
-    #     if course.find_parent(class_='rowReceiving'):
-    #         print(f'Receiving - {course_number.text.strip()}: {course_title.text.strip()}')
-    #     else: 
-    #         print(f'Sending - {course_number.text.strip()}: {course_title.text.strip()}')
-
 
     courses = soup.find_all('div', class_='rowReceiving')
     for receiving_course in courses:
         receiving_course_number = receiving_course.find_next(class_='prefixCourseNumber')
         receiving_course_title = receiving_course.find_next(class_='courseTitle')
         sending = receiving_course.find_next_sibling(class_='rowSending') # gets the corresponding sending agreement
-        if sending.find('p'): # occurs when no course is articulated
-            print(f'{receiving_course_number.text.strip()} {receiving_course_title.text.strip()}: {sending.text.strip()}')
-        else: 
+        try:
             articulation = sending.find('awc-articulation-sending').find('div', class_='view_sending__content')
-            agreement_content = articulation.find_all('div', recursive=False)
+        except:
+            return None
+        else:
+            agreement_content = articulation.find_all('div', recursive=False) # checks for only immediate relevant children in sending content
             # print(agreement_content)
             if len(agreement_content) == 1:
                 sending_course_number = sending.find_next(class_='prefixCourseNumber')
