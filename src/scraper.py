@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import time
 
 def scrape():
-    url: str = 'https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2Ffc50cced-05c2-43c7-7dd5-08dcb87d5deb'
+    url: str = 'https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb'
     
     options = Options()
     options.add_argument('--headless')
@@ -29,9 +29,18 @@ def scrape():
     for receiving_course in courses:
         receiving_course_number = receiving_course.find_next(class_='prefixCourseNumber')
         receiving_course_title = receiving_course.find_next(class_='courseTitle')
-        sending = receiving_course.find_next_sibling(class_='rowSending')
-        if sending.findChildren('p'): # occurs when no course is articulated
+        sending = receiving_course.find_next_sibling(class_='rowSending') # gets the corresponding sending agreement
+        if sending.find('p'): # occurs when no course is articulated
             print(f'{receiving_course_number.text.strip()} {receiving_course_title.text.strip()}: {sending.text.strip()}')
+        else: 
+            articulation = sending.find('awc-articulation-sending').find('div', class_='view_sending__content')
+            agreement_content = articulation.find_all('div', recursive=False)
+            # print(agreement_content)
+            if len(agreement_content) == 1:
+                sending_course_number = sending.find_next(class_='prefixCourseNumber')
+                sending_course_title = sending.find_next(class_='courseTitle')
+                print(f'{receiving_course_number.text.strip()} {receiving_course_title.text.strip()}: {sending_course_number.text.strip()} {sending_course_title.text.strip()}')
+                
 
 if __name__ == '__main__':
     scrape()
