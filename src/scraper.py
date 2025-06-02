@@ -22,15 +22,27 @@ def scrape():
         sending = receiving_course.find_next_sibling(class_='rowSending') # gets the corresponding sending agreement
         try:
             articulation = sending.find('awc-articulation-sending').find('div', class_='view_sending__content')
-        except:
+        except: # if there is no course articulated, then this div will not exist 
             return None
         else:
-            agreement_content = articulation.find_all('div', recursive=False) # checks for only immediate relevant children in sending content
-            # print(agreement_content)
-            if len(agreement_content) == 1:
+            conjunction = articulation.find('awc-view-conjunction')
+
+            if conjunction:
+                conjunction_text = conjunction.find_next('div').text.strip()
+                if conjunction_text == 'Or':
+                    first_sending_course_number = sending.find_next(class_='prefixCourseNumber')
+                    first_sending_course_title = sending.find_next(class_='courseTitle')
+                    second_sending_course_number = conjunction.find_next(class_='prefixCourseNumber')
+                    second_sending_course_title = conjunction.find_next(class_='courseTitle')
+                    print(f'{receiving_course_number.text.strip()} {receiving_course_title.text.strip()}: ' 
+                    f'{first_sending_course_number.text.strip()} {first_sending_course_title.text.strip()}, '
+                    f'{second_sending_course_number.text.strip()} {second_sending_course_title.text.strip()}')
+            else: 
+                # agreement_content = articulation.find_all('div', recursive=False) # recursive=False checks for only immediate children in sending content
                 sending_course_number = sending.find_next(class_='prefixCourseNumber')
                 sending_course_title = sending.find_next(class_='courseTitle')
-                print(f'{receiving_course_number.text.strip()} {receiving_course_title.text.strip()}: {sending_course_number.text.strip()} {sending_course_title.text.strip()}')
+                print(f'{receiving_course_number.text.strip()} {receiving_course_title.text.strip()}: ' 
+                f'{sending_course_number.text.strip()} {sending_course_title.text.strip()}')
                 
 
 if __name__ == '__main__':
