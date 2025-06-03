@@ -6,6 +6,8 @@ This document will detail the nescary steps to properly configure your enviromen
 
 ## Packages
 
-1. Selenium
-    - Will also need to install chrome drivers (more documentation how how should be added later)
+~~1. Selenium~~
+
+1. Playwright
+    - make sure to run `playwright install`
 1. BeautifulSoup
