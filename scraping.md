@@ -15,7 +15,7 @@ This guide is as of June 2025.
 
 ## How are articulations for classes defined
 
-On each page the articualtion for each class is wrapped in a div with the class `articRow`
+On each page the articulation for each class is wrapped in a div with the class `articRow`
 
 From there we can break down the div into three different divs which have the following classes: `rowReceiving`, `rowDirection`, and `rowSending`. From now on we will refer to these divs with their respective class name.
 
