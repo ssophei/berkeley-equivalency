@@ -2,7 +2,7 @@
 
 This doc will detail how the assist webpage is formatted to understand how to scrape it.
 
-**Note:** This doc will mostly cover articulation for specific classes and not articulation for specfic majors (i.e what classes are required for specific majors).
+**Note:** This doc will mostly cover articulation for specific classes and not articulation for specific majors (i.e what classes are required for specific majors).
 
 There is example html in the `example.html` file for this [site](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb), which can be used as a reference, the html is formatted and edited to be easier to read. There are also comments pointing out relevenet sections of code.
 
