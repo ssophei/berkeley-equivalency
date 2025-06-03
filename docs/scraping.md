@@ -54,7 +54,7 @@ These appear to be the main way to define conjunctions and usually appear within
 
 They contain the following things:
 
-- div with class `conjunction or standAlone` which then contains "or" (or "and"??) as text
+- div with class `conjunction` it then also either contains a `or` class or a `and` class depending on the type of conjction it then also wraps the text "or" or "and".
 
 Example:
 
