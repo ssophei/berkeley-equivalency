@@ -2,7 +2,7 @@
 
 ## Intro
 
-This document will detail the nescary steps to properly configure your enviroment.
+This document will detail the necessary steps to properly configure your environment.
 
 ## Packages
 
