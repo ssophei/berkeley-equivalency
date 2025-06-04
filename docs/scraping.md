@@ -50,12 +50,13 @@ The main content is in the div with the `view_sending__content` class which defi
 
 Sometimes assist will leave messages on a particular course aggreement for more info. A detailed list of all list has not been created (TODO), but they share some commonalties.
 
-First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer` the message is then just wrapped in this series of divs. The message seems to be applied on the same level as a group of class(es) (so either just a single class or an and clause)
+First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer` the message is then just wrapped in this series of divs. The message seems to be applied on the same level as a group of class(es) it corresponds too (so either just a single course or an and clause)
 
 List of Attributes (so far):
 
     - "This course must be taken at the university after transfer", I'm assuming this means no course at any school will articulate, this is different from "No Course Articulated" as that is specific for the specific school and doesn't rule out the fact that other schools might have classes that articulate.
     - "Must complete an additional university course after transfer to satisfy this requirement", this means that part of the course is accepted but part of it needs to be taken as a bridge course
+    - "Same as {X}, {Y}, {Z}", this indicates that on the course is crosslisted as different courses at that institution
 
 ## Conjunctions
 
