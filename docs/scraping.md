@@ -4,30 +4,32 @@ This doc will detail how the assist webpage is formatted to understand how to sc
 
 **Note:** This doc will mostly cover articulation for specific classes and not articulation for specific majors (i.e what classes are required for specific majors).
 
-There is example html in the `example_html` folder for this [site](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb), and others which can be used as a reference, the html is formatted and edited to be easier to read. There are also comments pointing out relevant sections of code.
+There is example html in the `example_html` folder for this [site](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb), and others which can be used as a reference; the html is formatted and edited to be easier to read. There are also comments pointing out relevant sections of code.
 
 This guide is as of June 2025.
 
 ## Quick Aside on Formatting
 
-- Many divs have one unique class, and we will use this class to define and name that div, and it might be referred to by the name of the class
-- The syntax `{X} -> {Y}` defines a nested expression and simply means: "Y contained in X"
+- Many divs have one unique class, and we will use this class to define and name that div, and it might be referred to by the name of the class.
+- The syntax `{X} -> {Y}` defines a nested expression and simply means: "Y contained in X".
 
 ## How are articulations for classes defined?
 
-On each page the articulation for each class is wrapped in a div with the class `articRow` (`rowContent` defines larger section of rows with multiple different class articulations)
+On each page the articulation for each class is wrapped in a div with the class `articRow` (`rowContent` defines a larger section of rows with multiple different class articulations).
 
-From there we can break down the div into three different divs which have the following classes: `rowReceiving`, `rowDirection`, and `rowSending`. From now on we will refer to these divs with their respective class name.
+From there we can break down the div into three different divs which have the following classes: `rowReceiving`, `rowDirection`, and `rowSending`. From now on we will refer to these divs by their respective class name.
 
 ### `rowReceiving` div
 
-This defines the details of a class at the target school. (non cc)
+This defines the details of a class at the target school (non-CC).
 
-As of right now it only contains the the div with class `courseLine` which contains the following divs defined by their unique classes:
+As of right now it only contains the div with class `courseLine` which contains the following divs defined by their unique classes:
 
-- `prefixCourseNumber`, the text this div wraps, as the name implies, defines the course number (ex MATH 1B)
-- `courseTitle`, the text this div wraps gives the general course title although it might not be super detailed (Ex: Calculus (however this is used for both Calc 1 and Calc 2 for Berk))
-- `courseUnits`, the text this div wraps are the number of units for the course. (Ex: 4.00), it also contains a hidden span with the class `visually-hidden` that contains the word "units"
+- `prefixCourseNumber`, the text this div wraps, as the name implies, defines the course number (ex MATH 1B).
+- `courseTitle`, the text this div wraps gives the general course title although it might not be super detailed (Ex: Calculus (however this is used for both Calc 1 and Calc 2 for Berk)).
+- `courseUnits`, the text this div wraps are the number of units for the course. (Ex: 4.00), it also contains a hidden span with the class `visually-hidden` that contains the word "units".
+
+In terms of [conjunctions](#conjunctions) it works the same as `rowSending` (from the base class down however these differ (`rowSending` has two extra layers before it starts)).
 
 ### `rowDirection` div
 
@@ -37,12 +39,12 @@ Don't fully understand the purpose of this div, but it displays an arrow from ei
 
 This defines the possible ways to take classes at the source school to articulate for the target school's class.
 
-The whole things is wrapped in a `awc-articulation-sending` element (not div), except when there are no courses to be articulated **if that is the case the text "No Course Articulated" will appear wrapped in a p tag (add more if possible)
+The whole thing is wrapped in a `awc-articulation-sending` element (not div), except when there are no courses to be articulated. **If that is the case the text "No Course Articulated" will appear wrapped in a p tag.** (add more if possible)
 
 The main content is in the div with the `view_sending__content` class which defines the following divs, again defined by their unique classes:
 
-- `courseLine`, refer to [`rowReceiving`](#rowreceiving-div), it's the same one
-- `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions) below
+- `courseLine`, refer to [`rowReceiving`](#rowreceiving-div), it's the same one.
+- `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions) below.
 
 ## Conjunctions
 
@@ -73,9 +75,13 @@ These appear to be the main way to define conjunctions and usually appear within
 
 They contain the following things:
 
-- div with class `conjunction` it then also either contains a `or` class or a `and` class depending on the type of conjction it then also wraps the text "or" or "and". This (inner div) will also have a class of either "standAlone" or "series" which will match the "cssclass" tag of the actual `awc-view-conjunction`. I dont fully understand the meaning of this tag yet.
+- div with class `conjunction` it then also either contains a `or` class or a `and` class depending on the type of conjction it then also wraps the text "or" or "and". This (inner div) will also have a class of either "standAlone" or "series" which will match the "cssclass" tag of the actual `awc-view-conjunction`. My best guess is that they indicate wheter or not its part of bracket and the sign interupts the bracket or weather its not part of a bracket. The image below contains both:
+
+![Two and'ed classses which are joined by an or](images/one_or_with_two_ands.png)
 
 ### Exampels
+
+The following exampels are using `rowSending` however `rowReceiving` is equally valid.
 
 #### Single or layout
 
@@ -85,11 +91,29 @@ They contain the following things:
 
 `rowSending -> view_sending__content -> bracketWrapper` then within that we have `bracketTop` then `bracketContent` (which looks simlar to the [Single or layout](#single-or-layout) except the `awc-view-conjunction` is with an and) and finally `bracketBottom`
 
+#### Multiple ands
+
+Example:
+
+![multiple ands](images/multiple_ands.png)
+
+This is pretty straitforward. It is the same as with a [single and](#single-and-layout) however after the second class within `bracketContent` there will be another `awc-view-conjunction`, and so on until the end.
+
+#### Two and classes joined by an or
+
+Example:
+
+![Two and'ed classses which are joined by an or](images/one_or_with_two_ands.png)
+
+By now we will see the pattern.
+
+We start by entering the `rowSending -> view_sending__content` next we will define a bracket as described above with our bracket content. Then an `awc-view-conjunction` with the "or" class and containing "or" as text. Then another bracket with the other set of classes.
+
 ## TODO
 
 Investigate these cases:
 
-- [ ] [Multiple "and"s stacked](https://assist.org/transfer/results?year=75&institution=79&agreement=105&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F105%2Fto%2F79%2FMajor%2F3600bdbe-e56c-4bb8-7e00-08dcb87d5deb)
+- [x] [Multiple "and"s stacked](https://assist.org/transfer/results?year=75&institution=79&agreement=105&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F105%2Fto%2F79%2FMajor%2F3600bdbe-e56c-4bb8-7e00-08dcb87d5deb)
 - [x] [Single and](https://assist.org/transfer/results?year=75&institution=79&agreement=121&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F121%2Fto%2F79%2FMajor%2F6419da5a-b4fd-4922-7ddb-08dcb87d5deb)
 - [ ] Cases where there is extra information about a class such as if it has to be taken as a bridge course in addition other cases of addtional info exist for example in the [IVC to Berk (Analytics)](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb) with the "Regular and honors courses may be combined to complete this series"
-- [ ] Articulate multiple classes on target side (for example when target school splits lab and lecture but source has it in one)
+- [ ] Articulate multiple classes
