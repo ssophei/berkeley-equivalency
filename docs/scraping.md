@@ -46,6 +46,19 @@ The main content is in the div with the `view_sending__content` class which defi
 - `courseLine`, refer to [`rowReceiving`](#rowreceiving-div), it's the same one.
 - `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions) below.
 
+## Attributes
+
+Sometimes assist will leave messages on a particular course aggreement for more info. A detailed list of all list has not been created (TODO), but they share some commonalties.
+
+First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer`
+The message is then just wrapped in this series of divs
+
+The message seem to be applied on the same level as a group of class (so either just a single class or an and clause)
+
+Special Attributes:
+
+    - "This course must be taken at the university after transfer", i'm assuming this means no course at any school will articulate, this is different form "No Course Articulated" as that is specific for the specific school and doesnt rule out the fact that other schools might have classes that articulate.
+
 ## Conjunctions
 
 Conjunctions define a set of multiple classes that can be taken to fufill a course. This can either mean multiple classes must be taken to fully articualte or there are multiple options, or both.
@@ -116,4 +129,4 @@ Investigate these cases:
 - [x] [Multiple "and"s stacked](https://assist.org/transfer/results?year=75&institution=79&agreement=105&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F105%2Fto%2F79%2FMajor%2F3600bdbe-e56c-4bb8-7e00-08dcb87d5deb)
 - [x] [Single and](https://assist.org/transfer/results?year=75&institution=79&agreement=121&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F121%2Fto%2F79%2FMajor%2F6419da5a-b4fd-4922-7ddb-08dcb87d5deb)
 - [ ] Cases where there is extra information about a class such as if it has to be taken as a bridge course in addition other cases of addtional info exist for example in the [IVC to Berk (Analytics)](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb) with the "Regular and honors courses may be combined to complete this series"
-- [ ] Articulate multiple classes
+- [x] Articulate multiple classes
