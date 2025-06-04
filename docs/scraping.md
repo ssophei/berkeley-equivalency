@@ -13,9 +13,9 @@ This guide is as of June 2025.
 - Many divs have one unique class, and we will use this class to define and name that div, and it might be referred to by the name of the class
 - The syntax `{X} -> {Y}` defines a nested expression and simply means: "Y contained in X"
 
-## How are articulations for classes defined
+## How are articulations for classes defined?
 
-On each page the articulation for each class is wrapped in a div with the class `articRow`
+On each page the articulation for each class is wrapped in a div with the class `articRow` (`rowContent` defines larger section of rows with multiple different class articulations)
 
 From there we can break down the div into three different divs which have the following classes: `rowReceiving`, `rowDirection`, and `rowSending`. From now on we will refer to these divs with their respective class name.
 
@@ -42,11 +42,30 @@ It contains a `awc-articulation-sending` element (not div), (add more if possibl
 The main content is in the div with the `view_sending__content` class which defines the following divs, again defined by their unique classes:
 
 - `courseLine`, refer to [`rowReceiving`](#rowreceiving-div), it's the same one
-- `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions-or-or-and) below
+- `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions) below
 
-## Conjunctions NOT FINISHED ([or] or [and])
+## Conjunctions
 
-**Note:** So far only defines with one conjunction (not nested)
+Conjunctions define a set of multiple classes that can be taken to fufill a course. This can either mean multiple classes must be taken to fully articualte or there are multiple options, or both.
+
+**Note:** Section still a work in progress, so far only defines with one conjunction (not nested)
+
+### Brackets
+
+Brackets are common for "and" conjunctions when defining a set of classes that must be taken to articulate the course.
+
+Below is an example of the rendered html of a bracket:
+
+![example bracket](images/bracket_example.png)
+
+#### How are they defined in HTML?
+
+The whole content of a bracket will be contained in a div with the class `bracketWrapper` (This might make it easier to scrape ands as the classes are all defined within this div) and it fill contain the following items:
+
+    - `bracketTop`, simplify defines the top of the bracket
+    - `bracketContent`, this is the section we are interested in and it defines all the classes needed, since brackets only show up in and blocks (as of our understanding right now) it will contain the `courseLine` divs in addition to the [`awc-view-conjunction`] (#awc-view-conjunction)
+    - `bracketBottom`, simplfy defines the end of the bracket
+    - **Note:** there may be other divs that give more information that might be important like if any bridge courses need to be taken. These divs should be explored further in the future (TODO)
 
 ### `awc-view-conjunction`
 
@@ -54,13 +73,23 @@ These appear to be the main way to define conjunctions and usually appear within
 
 They contain the following things:
 
-- div with class `conjunction` it then also either contains a `or` class or a `and` class depending on the type of conjction it then also wraps the text "or" or "and".
+- div with class `conjunction` it then also either contains a `or` class or a `and` class depending on the type of conjction it then also wraps the text "or" or "and". This (inner div) will also have a class of either "standAlone" or "series" which will match the "cssclass" tag of the actual `awc-view-conjunction`. I dont fully understand the meaning of this tag yet.
 
-Example:
+### Exampels
+
+#### Single or layout
+
+`rowSending -> view_sending__content` then within that we have `courseLine` for the first option `awc-view-conjunction` with an `or` class and then another `courseLine` for the second option
+
+#### Single and layout
+
+`rowSending -> view_sending__content -> bracketWrapper` then within that we have `bracketTop` then `bracketContent` (which then contains looks simlar to the Single or layout except the `awc-view-conjunction` is with an and) and finally `bracketBottom`
 
 ## TODO
 
 Investigate these cases:
 
-- [Multiple "and"s stacked](https://assist.org/transfer/results?year=75&institution=79&agreement=105&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F105%2Fto%2F79%2FMajor%2F3600bdbe-e56c-4bb8-7e00-08dcb87d5deb)
-- [Single and](https://assist.org/transfer/results?year=75&institution=79&agreement=121&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F121%2Fto%2F79%2FMajor%2F6419da5a-b4fd-4922-7ddb-08dcb87d5deb)
+- [ ] [Multiple "and"s stacked](https://assist.org/transfer/results?year=75&institution=79&agreement=105&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F105%2Fto%2F79%2FMajor%2F3600bdbe-e56c-4bb8-7e00-08dcb87d5deb)
+- [x] [Single and](https://assist.org/transfer/results?year=75&institution=79&agreement=121&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F121%2Fto%2F79%2FMajor%2F6419da5a-b4fd-4922-7ddb-08dcb87d5deb)
+- [ ] Cases where there is extra information about a class such as if it has to be taken as a bridge course in addition other cases of addtional info exist for example in the [IVC to Berk (Analytics)](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb) with the "Regular and honors courses may be combined to complete this series"
+- [ ] Articulate multiple classes on target side (for example when target school splits lab and lecture but source has it in one)
