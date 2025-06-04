@@ -4,7 +4,7 @@ This doc will detail how the assist webpage is formatted to understand how to sc
 
 **Note:** This doc will mostly cover articulation for specific classes and not articulation for specific majors (i.e what classes are required for specific majors).
 
-There is example html in the `example.html` file for this [site](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb), which can be used as a reference, the html is formatted and edited to be easier to read. There are also comments pointing out relevant sections of code.
+There is example html in the `example_html` folder for this [site](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb), and others which can be used as a reference, the html is formatted and edited to be easier to read. There are also comments pointing out relevant sections of code.
 
 This guide is as of June 2025.
 
@@ -37,7 +37,7 @@ Don't fully understand the purpose of this div, but it displays an arrow from ei
 
 This defines the possible ways to take classes at the source school to articulate for the target school's class.
 
-It contains a `awc-articulation-sending` element (not div), (add more if possible)
+The whole things is wrapped in a `awc-articulation-sending` element (not div), except when there are no courses to be articulated **if that is the case the text "No Course Articulated" will appear wrapped in a p tag (add more if possible)
 
 The main content is in the div with the `view_sending__content` class which defines the following divs, again defined by their unique classes:
 
@@ -69,7 +69,7 @@ The whole content of a bracket will be contained in a div with the class `bracke
 
 ### `awc-view-conjunction`
 
-These appear to be the main way to define conjunctions and usually appear within the `rowSending -> view_sending__content` div. (but would also have to appear somewhere in the sending portion since some classes articulate more than 1 class (common for labs))
+These appear to be the main way to define conjunctions and usually appear within the `rowSending -> view_sending__content` div. (but would also have to appear somewhere in the sending portion since some classes articulate more than 1 class (common for labs)) TODO: THIS IS NOT ACCURATE FIX
 
 They contain the following things:
 
@@ -83,7 +83,7 @@ They contain the following things:
 
 #### Single and layout
 
-`rowSending -> view_sending__content -> bracketWrapper` then within that we have `bracketTop` then `bracketContent` (which then contains looks simlar to the Single or layout except the `awc-view-conjunction` is with an and) and finally `bracketBottom`
+`rowSending -> view_sending__content -> bracketWrapper` then within that we have `bracketTop` then `bracketContent` (which looks simlar to the [Single or layout](#single-or-layout) except the `awc-view-conjunction` is with an and) and finally `bracketBottom`
 
 ## TODO
 
