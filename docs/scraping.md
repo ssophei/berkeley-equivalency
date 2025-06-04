@@ -50,19 +50,16 @@ The main content is in the div with the `view_sending__content` class which defi
 
 Sometimes assist will leave messages on a particular course aggreement for more info. A detailed list of all list has not been created (TODO), but they share some commonalties.
 
-First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer`
-The message is then just wrapped in this series of divs
-
-The message seem to be applied on the same level as a group of class(es) (so either just a single class or an and clause)
+First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer` the message is then just wrapped in this series of divs. The message seems to be applied on the same level as a group of class(es) (so either just a single class or an and clause)
 
 List of Attributes (so far):
 
-    - "This course must be taken at the university after transfer", I'm assuming this means no course at any school will articulate, this is different form "No Course Articulated" as that is specific for the specific school and doesnt rule out the fact that other schools might have classes that articulate.
-    - "Must complete an additional university course after transfer to satisfy this requirement", this means that part of the course is excepted but part of it needs to be taken as a bridge course
+    - "This course must be taken at the university after transfer", I'm assuming this means no course at any school will articulate, this is different from "No Course Articulated" as that is specific for the specific school and doesn't rule out the fact that other schools might have classes that articulate.
+    - "Must complete an additional university course after transfer to satisfy this requirement", this means that part of the course is accepted but part of it needs to be taken as a bridge course
 
 ## Conjunctions
 
-Conjunctions define a set of multiple classes that can be taken to fufill a course. This can either mean multiple classes must be taken to fully articualte or there are multiple options, or both.
+Conjunctions define a set of multiple classes that can be taken to fulfill a course. This can either mean multiple classes must be taken to fully articulate or there are multiple options, or both.
 
 **Note:** Section still a work in progress, so far only defines with one conjunction (not nested)
 
@@ -76,11 +73,11 @@ Below is an example of the rendered html of a bracket:
 
 #### How are they defined in HTML?
 
-The whole content of a bracket will be contained in a div with the class `bracketWrapper` (This might make it easier to scrape ands as the classes are all defined within this div) and it fill contain the following items:
+The whole content of a bracket will be contained in a div with the class `bracketWrapper` (This might make it easier to scrape ands as the classes are all defined within this div) and it will contain the following items:
 
-    - `bracketTop`, simplify defines the top of the bracket
-    - `bracketContent`, this is the section we are interested in and it defines all the classes needed, since brackets only show up in and blocks (as of our understanding right now) it will contain the `courseLine` divs in addition to the [`awc-view-conjunction`] (#awc-view-conjunction)
-    - `bracketBottom`, simplfy defines the end of the bracket
+    - `bracketTop`, simply defines the top of the bracket
+    - `bracketContent`, this is the section we are interested in and it defines all the classes needed, since brackets only show up in and blocks (as of our understanding right now) it will contain the `courseLine` divs in addition to the [`awc-view-conjunction`](#awc-view-conjunction)
+    - `bracketBottom`, simply defines the end of the bracket
     - **Note:** there may be other divs that give more information that might be important like if any bridge courses need to be taken. These divs should be explored further in the future (TODO)
 
 ### `awc-view-conjunction`
@@ -89,13 +86,13 @@ These appear to be the main way to define conjunctions and usually appear right 
 
 They contain the following things:
 
-- div with class `conjunction` it then also either contains a `or` class or a `and` class depending on the type of conjction it then also wraps the text "or" or "and". This (inner div) will also have a class of either "standAlone" or "series" which will match the "cssclass" tag of the actual `awc-view-conjunction`. My best guess is that they indicate wheter or not its part of bracket and the sign interupts the bracket or weather its not part of a bracket. The image below contains both:
+- div with class `conjunction` it then also either contains an `or` class or an `and` class depending on the type of conjunction it then also wraps the text "or" or "and". This (inner div) will also have a class of either "standAlone" or "series" which will match the "cssclass" tag of the actual `awc-view-conjunction`. My best guess is that they indicate whether or not its part of a bracket and the sign interrupts the bracket or whether its not part of a bracket. The image below contains both:
 
-![Two and'ed classses which are joined by an or](images/one_or_with_two_ands.png)
+![Two and'ed classes which are joined by an or](images/one_or_with_two_ands.png)
 
-### Exampels
+### Examples
 
-The following exampels are using `rowSending` however `rowReceiving` is equally valid.
+The following examples are using `rowSending` however `rowReceiving` is equally valid.
 
 #### Single or layout
 
