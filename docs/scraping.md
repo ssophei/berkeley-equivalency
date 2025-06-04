@@ -53,11 +53,12 @@ Sometimes assist will leave messages on a particular course aggreement for more 
 First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer`
 The message is then just wrapped in this series of divs
 
-The message seem to be applied on the same level as a group of class (so either just a single class or an and clause)
+The message seem to be applied on the same level as a group of class(es) (so either just a single class or an and clause)
 
-Special Attributes:
+List of Attributes (so far):
 
-    - "This course must be taken at the university after transfer", i'm assuming this means no course at any school will articulate, this is different form "No Course Articulated" as that is specific for the specific school and doesnt rule out the fact that other schools might have classes that articulate.
+    - "This course must be taken at the university after transfer", I'm assuming this means no course at any school will articulate, this is different form "No Course Articulated" as that is specific for the specific school and doesnt rule out the fact that other schools might have classes that articulate.
+    - "Must complete an additional university course after transfer to satisfy this requirement", this means that part of the course is excepted but part of it needs to be taken as a bridge course
 
 ## Conjunctions
 
@@ -84,7 +85,7 @@ The whole content of a bracket will be contained in a div with the class `bracke
 
 ### `awc-view-conjunction`
 
-These appear to be the main way to define conjunctions and usually appear within the `rowSending -> view_sending__content` div. (but would also have to appear somewhere in the sending portion since some classes articulate more than 1 class (common for labs)) TODO: THIS IS NOT ACCURATE FIX
+These appear to be the main way to define conjunctions and usually appear right after the `courseLine` div followed by another `courseLine` div.
 
 They contain the following things:
 
@@ -128,5 +129,5 @@ Investigate these cases:
 
 - [x] [Multiple "and"s stacked](https://assist.org/transfer/results?year=75&institution=79&agreement=105&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F105%2Fto%2F79%2FMajor%2F3600bdbe-e56c-4bb8-7e00-08dcb87d5deb)
 - [x] [Single and](https://assist.org/transfer/results?year=75&institution=79&agreement=121&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F121%2Fto%2F79%2FMajor%2F6419da5a-b4fd-4922-7ddb-08dcb87d5deb)
-- [ ] Cases where there is extra information about a class such as if it has to be taken as a bridge course in addition other cases of addtional info exist for example in the [IVC to Berk (Analytics)](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb) with the "Regular and honors courses may be combined to complete this series"
+- [x] Cases where there is extra information about a class such as if it has to be taken as a bridge course in addition other cases of addtional info exist for example in the [IVC to Berk (Analytics)](https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb) with the "Regular and honors courses may be combined to complete this series"
 - [x] Articulate multiple classes
