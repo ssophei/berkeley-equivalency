@@ -4,8 +4,7 @@ import time
 import asyncio
 
 
-async def scrape():
-    url = 'https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb'
+async def scrape(url: str):
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -51,4 +50,5 @@ async def scrape():
         await browser.close()
 
 if __name__ == '__main__':
-    asyncio.run(scrape())
+    url = 'https://assist.org/transfer/results?year=75&institution=79&agreement=124&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F23d79a84-d16c-4b58-7dee-08dcb87d5deb'
+    asyncio.run(scrape(url))
