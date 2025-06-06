@@ -1,8 +1,4 @@
 import bs4
-from bs4 import BeautifulSoup
-from playwright.async_api import async_playwright
-import asyncio
-
 
 from typing import Any
 
@@ -23,10 +19,10 @@ def ensure_bs4_tag(tag: Any) -> bs4.element.Tag:
         raise TypeError(f"Expected a BeautifulSoup Tag, got {type(tag)} instead.")
 
 class Scraper:
-    def __init__(self, url, receiving_instution_name, sending_instution_name):
+    def __init__(self, url, receiving_instution_name, sending_institution_name):
         self.url = url
         self.receiving_instution_name = receiving_instution_name
-        self.sending_instution_name = sending_instution_name
+        self.sending_instution_name = sending_institution_name
 
     def clean_units(self, units: str) -> float:
         """
