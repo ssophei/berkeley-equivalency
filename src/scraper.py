@@ -1,6 +1,7 @@
+from typing import Any
+
 import bs4
 
-from typing import Any
 
 def ensure_bs4_tag(tag: Any) -> bs4.element.Tag:
     """
@@ -40,7 +41,7 @@ class Scraper:
             return float(removed_suffix)
         except ValueError as e:
             print(f"Error converting units to float: {e}")
-            raise ValueError(f"Invalid units format: {units}")
+            raise
 
     def clean_full_course(self, course: str) -> dict[str, str]:
         """
@@ -58,8 +59,9 @@ class Scraper:
             'subject': parts[0],
             'number': ' '.join(parts[1:])
         }
-    def process_courseLine(self, courseLine: bs4.element.Tag):
+    def process_course_line(self, courseLine: bs4.element.Tag):
         try:
+            # can safeley ignore types as its caught by the try except block
             course = courseLine.find('div', class_='prefixCourseNumber').text.strip() # type: ignore
             title = courseLine.find('div', class_='courseTitle').text.strip() # type: ignore
             units = courseLine.find('div', class_='courseUnits').text.strip() # type: ignore
@@ -76,32 +78,130 @@ class Scraper:
             print(f"Error processing course line: {e}")
             return None
     
+    def handle_bracket(self, bracket: bs4.element.Tag):
+        """
+        ### Description:
+            Handle the bracket element and extract its text.
+        ### Args:
+            bracket (bs4.element.Tag): The bracket element to process.
+        ### Returns:
+            str: The cleaned text from the bracket.
+        """
+        assert isinstance(bracket, bs4.element.Tag), "Expected a BeautifulSoup Tag"
+        assert bracket.name == 'div', "Expected a div element"
+        assert 'bracketWrapper' in (bracket.get('class') or []), "Expected a bracket class"
+        
+        bracket_content = ensure_bs4_tag(bracket.find('div', class_='bracketContent'))
+        
+        # make sure we only have ands
+        cojunctions = bracket_content.find_all('awc-view-conjunction')
+        if len(cojunctions) == 0:
+            raise ValueError("No conjunctions found in bracket content")
+        for conjunction in cojunctions:
+            if conjunction.text.strip() != 'And':
+                raise ValueError(f"Unexpected conjunction: {conjunction.text.strip()} in bracket")
+        
+        course_lines = bracket_content.find_all('div', class_='courseLine')
+        if not course_lines:
+            raise ValueError("No course lines found in bracket content")
+        courses = []
+        for course_line in course_lines:
+            course_line = ensure_bs4_tag(course_line)
+            course = self.process_course_line(course_line)
+            if course:
+                courses.append(course)
+        
+        return {
+            "type": "CourseGroup",
+            "courseConjunction": "And",
+            "courses": courses
+        }
+
+    def handle_main_block(self, mainBlock: bs4.element.Tag):
+        """
+        ### Description:
+            Handle the main block element and extract its text.
+        ### Args:
+            mainBlock (bs4.element.Tag): The main block element to process.
+        ### Returns:
+            dict: A dictionary with the type and text of the main block.
+        """
+        assert isinstance(mainBlock, bs4.element.Tag), "Expected a BeautifulSoup Tag"
+        assert mainBlock.name == 'div', "Expected a div element"
+        assert mainBlock.find(class_="courseLine") is not None, "Expected a courseLine class in mainBlock" 
+        
+        if (mainBlock.find('div', class_='bracketWrapper') is not None):
+            # handle bracket
+            brackets = mainBlock.find_all('div', class_='bracketWrapper')
+            and_conjuncted_courses = []
+            for bracket in brackets:
+                bracket = ensure_bs4_tag(bracket)
+                courses_in_bracket = self.handle_bracket(bracket)
+                and_conjuncted_courses.append(courses_in_bracket)
+            
+            # check the other `awc-view-conjunction` tags are "Or" otherwise we have an undocumented case and need manual inspection
+            non_and_or_conjunctions = mainBlock.find_all(
+                lambda tag: tag.name == 'awc-view-conjunction' and (tag.text.strip() != 'And' and tag.text.strip() != 'Or')
+            )
+            
+            if non_and_or_conjunctions:
+                raise ValueError(f"Unexpected conjunctions found: {[conj.text.strip() for conj in non_and_or_conjunctions]}")
+            
+            # lets add one more protective check 
+            all_conjunctions = mainBlock.find_all('awc-view-conjunction')
+            or_conjunctions = mainBlock.find_all(
+                lambda tag: tag.name == 'awc-view-conjunction' and tag.text.strip() == 'Or'
+            ) # use text to filer instead of classes since we wont know if classes stay consistent outside our observed data of "and" and "or"
+            
+            if len(all_conjunctions) != len(or_conjunctions) + len(brackets):
+                print(f"All conjunctions: {len(all_conjunctions)}, Or conjunctions: {len(or_conjunctions)}, Brackets: {len(brackets)}")
+                raise ValueError("Mismatch in conjunction counts: some brackets may not be handled correctly.")
+            
+            if len(or_conjunctions) == 0:
+                # if no or conjunctions, we can return and course directly
+                assert len(and_conjuncted_courses) == 1, "Expected exactly one course group when no 'Or' conjunctions are present"
+                return and_conjuncted_courses[0]
+            else:
+                # if there are or conjunctions, we need to return a group of courses
+                return {
+                    "type": "CourseGroup",
+                    "courseConjunction": "Or",
+                    "courses": and_conjuncted_courses
+                }
+            
+        else:
+            # for now only support one courseLine
+            courseLine = mainBlock.find('div', class_='courseLine')
+            if courseLine:
+                course_data = self.process_course_line(courseLine) # type: ignore
+                return course_data
+            else:
+                raise ValueError("No courseLine found.")
+
     # handle a rowReceiving
     def handle_rowReceiving(self, rowReceiving: bs4.element.Tag):
-        assert rowReceiving.name == 'div' and 'rowReceiving' in rowReceiving.get('class', []), f"Expected a 'div' with class 'rowReceiving', got {rowReceiving.name} with classes {rowReceiving.get('class', [])}" # type: ignore [] in .get protects us
-        
-        # for now only support one courseLine
-        courseLine = ensure_bs4_tag(rowReceiving.find('div', class_='courseLine'))
-        if courseLine:
-            course_data = self.process_courseLine(courseLine)
-            return course_data
-        else:
-            print("No courseLine found in rowReceiving.")
-            raise ValueError("No courseLine found in rowReceiving.")
-    
+        assert rowReceiving.name == 'div' and 'rowReceiving' in (rowReceiving.get('class') or []), f"Expected a 'div' with class 'rowReceiving', got {rowReceiving.name} with classes {rowReceiving.get('class', [])}" # type: ignore
+        try:
+            return self.handle_main_block(rowReceiving) 
+        except ValueError as e:
+            if str(e) == "No courseLine found.":
+                raise ValueError("No courseLine found in rowReceiving.") from e
+            else:
+                raise
+
     def handle_rowSending(self, rowSending: bs4.element.Tag):
-        assert rowSending.name == 'div' and 'rowSending' in rowSending.get('class', []), f"Expected a 'div' with class 'rowSending', got {rowSending.name} with classes {rowSending.get('class', [])}" # type: ignore [] in .get protects us
+        assert rowSending.name == 'div' and 'rowSending' in (rowSending.get('class') or []), f"Expected a 'div' with class 'rowSending', got {rowSending.name} with classes {rowSending.get('class', [])}" # type: ignore
         
         mainContent = ensure_bs4_tag(rowSending.find('div', class_='view_sending__content'))
-        
-        # for now only support one courseLine
-        courseLine = ensure_bs4_tag(mainContent.find('div', class_='courseLine'))
-        if courseLine:
-            course_data = self.process_courseLine(courseLine)
-            return course_data
-        else:
-            print("No courseLine found in rowSending.")
-            raise ValueError("No courseLine found in rowSending.")
+        if not mainContent:
+            raise ValueError("No main content found in rowSending.")
+        try:
+            return self.handle_main_block(mainContent)
+        except ValueError as e:
+            if str(e) == "No courseLine found.":
+                raise ValueError("No courseLine found in rowSending.") from e
+            else:
+                raise
     
     def process_artic_row(self, row: bs4.element.Tag):
         try:
@@ -111,7 +211,7 @@ class Scraper:
             sending_course = self.handle_rowSending(sending_html) # type: ignore
         except Exception as e:
             print(f"Error processing receiving course: {e}")
-            raise ValueError("Failed to process articRow.")
+            raise ValueError("Failed to process articRow.") from e
         
         return {
             "receiving": receiving_course,

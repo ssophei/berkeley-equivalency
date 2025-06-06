@@ -13,3 +13,27 @@ dependencies = [
     "selenium>=4.33.0",
     "webdriver-manager>=4.0.2",
 ]
+
+[tool.ruff]
+line-length = 88                    # Match Black's default
+target-version = "py311"           # Set to your lowest supported Python version
+include = ["src/scraper.py"]       # change this later when we delete the old refrence code
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle (style errors)
+    "F",  # pyflakes (unused imports, undefined names)
+    "B",  # bugbear (common bugs)
+    "I",  # isort (import sorting)
+    "UP", # pyupgrade (modernize syntax)
+    "C90",# mccabe (complexity checking)
+    "SIM",# simplify (suggest simpler code)
+    "TID",# tidy imports (like `typing`)
+    "TCH",  # type-import hygiene
+    "PYI"   # type correctness checking
+]
+
+ignore = [
+    "E501",  # Ignore line-too-long (if using Black)
+    "B008",  # Don't warn on function default as mutable (can be noisy in tests)
+]
