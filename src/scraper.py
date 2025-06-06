@@ -217,3 +217,30 @@ class Scraper:
             "receiving": receiving_course,
             "sending": sending_course
         }
+    
+    def process_page(self, soup: bs4.BeautifulSoup): # THIS FUNCTION PROABLY CONTAINS ERRORS DO NOT USE
+        """
+        # NOT COMPLETED: need to adaprt to spec
+        ### Description:
+            Process the entire page and extract all receiving and sending courses.
+        ### Args:
+            soup (BeautifulSoup): The BeautifulSoup object containing the page content.
+        ### Returns:
+            list: A list of dictionaries containing receiving and sending courses.
+        """
+        articRows = soup.find_all('div', class_='articRow')
+        articulations = []
+        
+        for row in articRows:
+            try:
+                row = ensure_bs4_tag(row)
+                processed_row = self.process_artic_row(row)
+                articulations.append(processed_row)
+            except ValueError as e:
+                print(f"Skipping row due to error: {e}")
+                raise
+        
+        return {
+            "type": "Articulation Agreement", # only thing supported for now
+            "articulations": articulations
+        }
