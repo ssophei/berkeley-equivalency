@@ -23,7 +23,7 @@ class Scraper:
     def __init__(self, url, receiving_instution_name, sending_institution_name):
         self.url = url
         self.receiving_instution_name = receiving_instution_name
-        self.sending_instution_name = sending_institution_name
+        self.sending_institution_name = sending_institution_name
 
     def clean_units(self, units: str) -> float:
         """
@@ -76,7 +76,7 @@ class Scraper:
             }
         except AttributeError as e:
             print(f"Error processing course line: {e}")
-            return None
+            raise
     
     def handle_bracket(self, bracket: bs4.element.Tag):
         """
@@ -132,7 +132,7 @@ class Scraper:
     
         return len(bracket.find_all(lambda tag: tag.name == 'awc-view-conjunction' and tag.text.strip() == 'And'))
 
-    def handle_main_block(self, mainBlock: bs4.element.Tag):
+    def handle_main_block(self, mainBlock: bs4.element.Tag) -> dict:
         """
         ### Description:
             Handle the main block element and extract its text.
@@ -270,6 +270,9 @@ class Scraper:
                 raise
         
         return {
+            # TODO: Missing major
             "type": "Articulation Agreement", # only thing supported for now
+            "receivingInstitution": self.receiving_instution_name,
+            "sendingInstitution": self.sending_institution_name,
             "articulations": articulations
         }

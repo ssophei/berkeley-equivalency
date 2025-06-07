@@ -37,3 +37,8 @@ ignore = [
     "E501",  # Ignore line-too-long (if using Black)
     "B008",  # Don't warn on function default as mutable (can be noisy in tests)
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+]
