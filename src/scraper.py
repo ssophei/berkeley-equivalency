@@ -116,6 +116,21 @@ class Scraper:
             "courseConjunction": "And",
             "courses": courses
         }
+    
+    def count_ands_in_bracket(self, bracket: bs4.element.Tag) -> int:
+        """
+        ### Description:
+            Count the number of 'And' conjunctions in a bracket element.
+        ### Args:
+            bracket (bs4.element.Tag): The bracket element to process.
+        ### Returns:
+            int: The count of 'And' conjunctions in the bracket.
+        """
+        assert isinstance(bracket, bs4.element.Tag), "Expected a BeautifulSoup Tag"
+        assert bracket.name == 'div', "Expected a div element"
+        assert 'bracketWrapper' in bracket.get('class', []), "Expected a bracket class" #type: ignore : again [] saves us
+    
+        return len(bracket.find_all(lambda tag: tag.name == 'awc-view-conjunction' and tag.text.strip() == 'And'))
 
     def handle_main_block(self, mainBlock: bs4.element.Tag):
         """
@@ -138,8 +153,18 @@ class Scraper:
                 bracket = ensure_bs4_tag(bracket)
                 courses_in_bracket = self.handle_bracket(bracket)
                 and_conjuncted_courses.append(courses_in_bracket)
+                
+            # now check that and count in brackets is equal to total and count
+            total_and_conjunctions = len(mainBlock.find_all(
+                lambda tag: tag.name == 'awc-view-conjunction' and tag.text.strip() == 'And'
+            ))
+            bracket_and_conjunctions = sum(self.count_ands_in_bracket(ensure_bs4_tag(bracket)) for bracket in brackets)
+            if total_and_conjunctions != bracket_and_conjunctions: # our assumption that all ands are in a bracket is wrong
+                raise ValueError(
+                    f"Mismatch in 'And' conjunction counts: {total_and_conjunctions} found, but only {bracket_and_conjunctions} in brackets."
+                )
             
-            # check the other `awc-view-conjunction` tags are "Or" otherwise we have an undocumented case and need manual inspection
+            # now check the other `awc-view-conjunction` tags are "Or" otherwise we have an undocumented case and need manual inspection
             non_and_or_conjunctions = mainBlock.find_all(
                 lambda tag: tag.name == 'awc-view-conjunction' and (tag.text.strip() != 'And' and tag.text.strip() != 'Or')
             )
@@ -153,7 +178,7 @@ class Scraper:
                 lambda tag: tag.name == 'awc-view-conjunction' and tag.text.strip() == 'Or'
             ) # use text to filer instead of classes since we wont know if classes stay consistent outside our observed data of "and" and "or"
             
-            if len(all_conjunctions) != len(or_conjunctions) + len(brackets):
+            if len(all_conjunctions) != len(or_conjunctions) + total_and_conjunctions:
                 print(f"All conjunctions: {len(all_conjunctions)}, Or conjunctions: {len(or_conjunctions)}, Brackets: {len(brackets)}")
                 raise ValueError("Mismatch in conjunction counts: some brackets may not be handled correctly.")
             
@@ -207,10 +232,14 @@ class Scraper:
         try:
             receiving_html = row.find('div', class_='rowReceiving')  # type: ignore
             receiving_course = self.handle_rowReceiving(receiving_html) # type: ignore
+        except Exception as e:
+            print(f"Error processing receiving course: {e}")
+            raise ValueError("Failed to process articRow.") from e
+        try:
             sending_html = row.find('div', class_='rowSending')  # type: ignore
             sending_course = self.handle_rowSending(sending_html) # type: ignore
         except Exception as e:
-            print(f"Error processing receiving course: {e}")
+            print(f"Error processing sending course: {e}")
             raise ValueError("Failed to process articRow.") from e
         
         return {
