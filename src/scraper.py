@@ -221,13 +221,13 @@ class Scraper:
         # print(f"Row sending content: {rowSending.prettify()}")
         try:
             mainContent = ensure_bs4_tag(rowSending.find('div', class_='view_sending__content'))
-        except:
+        except TypeError:
             if "No Course Articulated" in rowSending.text:
                 return {
                     "type": "NotArticulated",
                 }
-            else:
-                raise ValueError({"message": "No main content found in rowSending.", "data": rowSending.prettify()}) # add some proper data types later for passing errors up # TODO
+        except Exception as e:
+            raise ValueError({"message": "No main content found in rowSending.", "data": rowSending.prettify()}) from e # add some proper data types later for passing errors up # TODO
         try:
             return self.handle_main_block(mainContent)
         except ValueError as e:
