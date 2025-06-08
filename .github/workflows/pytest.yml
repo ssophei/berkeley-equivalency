@@ -23,7 +23,7 @@ jobs:
           curl -LsSf https://astral.sh/uv/install.sh | sh
       - name: Install playwright
         run: |
-          playwright install
+          uv run playwright install
       - name: Run tests
         run: |
           uv run pytest # uv will install dependencies
