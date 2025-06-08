@@ -116,7 +116,7 @@ class Scraper:
         return {
             "type": "CourseGroup",
             "courseConjunction": "And",
-            "courses": courses
+            "items": courses
         }
     
     def count_ands_in_bracket(self, bracket: bs4.element.Tag) -> int:
@@ -193,7 +193,7 @@ class Scraper:
                 return {
                     "type": "CourseGroup",
                     "courseConjunction": "Or",
-                    "courses": and_conjuncted_courses
+                    "items": and_conjuncted_courses
                 }
             
         else:
