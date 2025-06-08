@@ -19,7 +19,7 @@ pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 88                    # Match Black's default
-target-version = "py311"           # Set to your lowest supported Python version
+target-version = "py312"           # Set to your lowest supported Python version
 include = ["src/scraper.py"]       # change this later when we delete the old refrence code
 
 [tool.ruff.lint]
