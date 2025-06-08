@@ -1,6 +1,8 @@
 from typing import Any
 
 import bs4
+from bs4 import BeautifulSoup
+from playwright.async_api import async_playwright
 
 
 def ensure_bs4_tag(tag: Any) -> bs4.element.Tag:
@@ -216,10 +218,16 @@ class Scraper:
 
     def handle_rowSending(self, rowSending: bs4.element.Tag):
         assert rowSending.name == 'div' and 'rowSending' in (rowSending.get('class') or []), f"Expected a 'div' with class 'rowSending', got {rowSending.name} with classes {rowSending.get('class', [])}" # type: ignore
-        
-        mainContent = ensure_bs4_tag(rowSending.find('div', class_='view_sending__content'))
-        if not mainContent:
-            raise ValueError("No main content found in rowSending.")
+        # print(f"Row sending content: {rowSending.prettify()}")
+        try:
+            mainContent = ensure_bs4_tag(rowSending.find('div', class_='view_sending__content'))
+        except:
+            if "No Course Articulated" in rowSending.text:
+                return {
+                    "type": "NotArticulated",
+                }
+            else:
+                raise ValueError({"message": "No main content found in rowSending.", "data": rowSending.prettify()}) # add some proper data types later for passing errors up # TODO
         try:
             return self.handle_main_block(mainContent)
         except ValueError as e:
@@ -234,22 +242,22 @@ class Scraper:
             receiving_course = self.handle_rowReceiving(receiving_html) # type: ignore
         except Exception as e:
             print(f"Error processing receiving course: {e}")
-            raise ValueError("Failed to process articRow.") from e
+            raise ValueError("Failed to process receiving classes in articRow") from e
         try:
             sending_html = row.find('div', class_='rowSending')  # type: ignore
             sending_course = self.handle_rowSending(sending_html) # type: ignore
         except Exception as e:
             print(f"Error processing sending course: {e}")
-            raise ValueError("Failed to process articRow.") from e
+            raise ValueError("Failed to process sending classes in articRow.") from e
         
         return {
             "receiving": receiving_course,
             "sending": sending_course
         }
     
-    def process_page(self, soup: bs4.BeautifulSoup): # THIS FUNCTION PROABLY CONTAINS ERRORS DO NOT USE
+    def process_page(self, soup: bs4.BeautifulSoup):
         """
-        # NOT COMPLETED: need to adaprt to spec
+        # NOT COMPLETED: need to adapt to spec        
         ### Description:
             Process the entire page and extract all receiving and sending courses.
         ### Args:
@@ -276,3 +284,44 @@ class Scraper:
             "sendingInstitution": self.sending_institution_name,
             "articulations": articulations
         }
+        
+
+async def scrape_url(url: str, receiving_institution_name: str, sending_institution_name: str) -> dict:
+    """
+    ### Description:
+        Scrape the given URL and return the processed data.
+    ### Args:
+        url (str): The URL to scrape.
+        receiving_institution_name (str): The name of the receiving institution.
+        sending_institution_name (str): The name of the sending institution.
+    ### Returns:
+        dict: The processed data from the scraped page.
+    """
+    playwright = await async_playwright().start()
+    browser = await playwright.chromium.launch(headless=True)
+    page = await browser.new_page()
+    await page.goto(url, wait_until='networkidle')
+    await page.wait_for_selector('.articRow') # wait until at least one articRow is loaded
+    
+    content = await page.content()
+    soup = BeautifulSoup(content, 'lxml')
+    # print(f"Content: \n {soup.prettify()}")
+    scraper = Scraper(url, receiving_institution_name, sending_institution_name)
+    try:
+        data = scraper.process_page(soup)
+        return data
+    except ValueError as e:
+        print(f"Error processing page: {e}")
+        raise
+    
+if __name__ == "__main__":
+    import asyncio
+    url = "https://assist.org/transfer/results?year=75&institution=79&agreement=113&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F113%2Fto%2F79%2FMajor%2F607b828c-8ba3-411b-7de1-08dcb87d5deb"
+    receiving_institution_name = "Receiving Institution"
+    sending_institution_name = "Sending Institution"
+    
+    try:
+        data = asyncio.run(scrape_url(url, receiving_institution_name, sending_institution_name))
+        print(data)
+    except Exception as e:
+        print(f"An error occurred: {e}")
