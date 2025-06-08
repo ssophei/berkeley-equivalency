@@ -96,10 +96,10 @@ class Scraper:
         bracket_content = ensure_bs4_tag(bracket.find('div', class_='bracketContent'))
         
         # make sure we only have ands
-        cojunctions = bracket_content.find_all('awc-view-conjunction')
-        if len(cojunctions) == 0:
+        conjunctions = bracket_content.find_all('awc-view-conjunction')
+        if len(conjunctions) == 0:
             raise ValueError("No conjunctions found in bracket content")
-        for conjunction in cojunctions:
+        for conjunction in conjunctions:
             if conjunction.text.strip() != 'And':
                 raise ValueError(f"Unexpected conjunction: {conjunction.text.strip()} in bracket")
         
