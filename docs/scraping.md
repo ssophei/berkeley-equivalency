@@ -31,6 +31,11 @@ As of right now it only contains the div with class `courseLine` which contains 
 
 In terms of [conjunctions](#conjunctions) it works the same as `rowSending` (from the base class down however these differ (`rowSending` has two extra layers before it starts)).
 
+For general education/breadth agreements, `rowReceiving` contains only the div with class `requirementOrGEArea` which itself only contains a div with class `content`. this div contains the following two divs with unique classes:
+
+- `geAreaCode`, div containing a two letter code representing the corresponding education/breadth requirement. it is formatted as a string with leading and trailing whitespace (ex. " QR " for Quantitative Reasoning).
+- `courseTitle`, the text this div wraps provides the two letter code of the requirement and its full title, which are separated only by a single hyphen (ex. QR-Quantitative Reasoning). 
+
 ### `rowDirection` div
 
 Don't fully understand the purpose of this div, but it displays an arrow from either the source to target or vice versa for that specific class.
