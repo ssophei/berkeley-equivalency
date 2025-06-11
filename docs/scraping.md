@@ -51,6 +51,8 @@ The main content is in the div with the `view_sending__content` class which defi
 - `courseLine`, refer to [`rowReceiving`](#rowreceiving-div), it's the same one.
 - `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions) below.
 
+With a general education/breadth articulation agreement, there are often many courses that can fulfill a single requirement. In many ways, these agreements are much simpler, as they only contain divs of two unique classes.  The majority of content within `view_sending__content` will simply just be many divs of the class `courseLine`. Furthermore, I have not seen any other attributes being included besides cross-listings, which are indicated with a sibling div of the class `attribute course sending`. This div contains another div of the class `attributeContent`, whose contents are described in the [cross-listing section](#cross-listing). 
+
 ## Attributes
 
 Sometimes assist will leave messages on a particular course aggreement for more info. A detailed list of all list has not been created (TODO), but they share some commonalties.
