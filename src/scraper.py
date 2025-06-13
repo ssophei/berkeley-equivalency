@@ -96,10 +96,10 @@ class Scraper:
         bracket_content = ensure_bs4_tag(bracket.find('div', class_='bracketContent'))
         
         # make sure we only have ands
-        cojunctions = bracket_content.find_all('awc-view-conjunction')
-        if len(cojunctions) == 0:
+        conjunctions = bracket_content.find_all('awc-view-conjunction')
+        if len(conjunctions) == 0:
             raise ValueError("No conjunctions found in bracket content")
-        for conjunction in cojunctions:
+        for conjunction in conjunctions:
             if conjunction.text.strip() != 'And':
                 raise ValueError(f"Unexpected conjunction: {conjunction.text.strip()} in bracket")
         
@@ -284,44 +284,3 @@ class Scraper:
             "sendingInstitution": self.sending_institution_name,
             "articulations": articulations
         }
-        
-
-async def scrape_url(url: str, receiving_institution_name: str, sending_institution_name: str) -> dict:
-    """
-    ### Description:
-        Scrape the given URL and return the processed data.
-    ### Args:
-        url (str): The URL to scrape.
-        receiving_institution_name (str): The name of the receiving institution.
-        sending_institution_name (str): The name of the sending institution.
-    ### Returns:
-        dict: The processed data from the scraped page.
-    """
-    playwright = await async_playwright().start()
-    browser = await playwright.chromium.launch(headless=True)
-    page = await browser.new_page()
-    await page.goto(url, wait_until='networkidle')
-    await page.wait_for_selector('.articRow') # wait until at least one articRow is loaded
-    
-    content = await page.content()
-    soup = BeautifulSoup(content, 'lxml')
-    # print(f"Content: \n {soup.prettify()}")
-    scraper = Scraper(url, receiving_institution_name, sending_institution_name)
-    try:
-        data = scraper.process_page(soup)
-        return data
-    except ValueError as e:
-        print(f"Error processing page: {e}")
-        raise
-    
-if __name__ == "__main__":
-    import asyncio
-    url = "https://assist.org/transfer/results?year=75&institution=79&agreement=113&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F113%2Fto%2F79%2FMajor%2F607b828c-8ba3-411b-7de1-08dcb87d5deb"
-    receiving_institution_name = "Receiving Institution"
-    sending_institution_name = "Sending Institution"
-    
-    try:
-        data = asyncio.run(scrape_url(url, receiving_institution_name, sending_institution_name))
-        print(data)
-    except Exception as e:
-        print(f"An error occurred: {e}")

@@ -31,6 +31,11 @@ As of right now it only contains the div with class `courseLine` which contains 
 
 In terms of [conjunctions](#conjunctions) it works the same as `rowSending` (from the base class down however these differ (`rowSending` has two extra layers before it starts)).
 
+For general education/breadth agreements, `rowReceiving` contains only the div with class `requirementOrGEArea` which itself only contains a div with class `content`. this div contains the following two divs with unique classes:
+
+- `geAreaCode`, div containing a two letter code representing the corresponding education/breadth requirement. it is formatted as a string with leading and trailing whitespace (ex. " QR " for Quantitative Reasoning).
+- `courseTitle`, the text this div wraps provides the two letter code of the requirement and its full title, which are separated only by a single hyphen (ex. QR-Quantitative Reasoning). 
+
 ### `rowDirection` div
 
 Don't fully understand the purpose of this div, but it displays an arrow from either the source to target or vice versa for that specific class.
@@ -46,17 +51,23 @@ The main content is in the div with the `view_sending__content` class which defi
 - `courseLine`, refer to [`rowReceiving`](#rowreceiving-div), it's the same one.
 - `awc-view-conjunction` refer to the discussion on [conjunctions](#conjunctions) below.
 
+With a general education/breadth articulation agreement, there are often many courses that can fulfill a single requirement. In many ways, these agreements are much simpler, as they only contain divs of two unique classes.  The majority of content within `view_sending__content` will simply just be many divs of the class `courseLine`. Furthermore, I have not seen any other attributes being included besides cross-listings, which are indicated with a sibling div of the class `attribute course sending`. This div contains another div of the class `attributeContent`, whose contents are described in the [cross-listing section](#cross-listing). 
+
 ## Attributes
 
 Sometimes assist will leave messages on a particular course aggreement for more info. A detailed list of all list has not been created (TODO), but they share some commonalties.
 
-First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer` the message is then just wrapped in this series of divs. The message seems to be applied on the same level as a group of class(es) it corresponds too (so either just a single course or an and clause)
+First off they all seem to be wrapped in a div with the class `attribute -> attributeContent -> attributeContainer` the message is then just wrapped in this series of divs. The message seems to be applied on the same level as a group of class(es) it corresponds to (so either just a single course or an and clause)
 
 List of Attributes (so far):
 
     - "This course must be taken at the university after transfer", I'm assuming this means no course at any school will articulate, this is different from "No Course Articulated" as that is specific for the specific school and doesn't rule out the fact that other schools might have classes that articulate.
     - "Must complete an additional university course after transfer to satisfy this requirement", this means that part of the course is accepted but part of it needs to be taken as a bridge course
     - "Same as {X}, {Y}, {Z}", this indicates that on the course is crosslisted as different courses at that institution
+
+### Cross-Listing
+
+When a course is cross-listed, there is no `attributeContainer`. Instead, `attributeContent` contains the string " Same as&nbsp; ". While this text is not necessarily needed in the final scraping output, it is a useful indicator that the course is cross-listed. Additionally, the span with class `attributeContent__courses` is also contained in `attributeContent`. It contains a string with the alternative name of the class (ex. " ENVECON C1 "). Note the trailing and leading whitespaces that must be stripped. 
 
 ## Conjunctions
 
