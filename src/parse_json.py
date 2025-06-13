@@ -17,13 +17,20 @@ for group in templateAssets:
                             'title': course.get('courseTitle'),
                             'course prefix': course.get('prefix'),
                             'course number': course.get('courseNumber'),
+                            'course': f'{course.get('prefix')} {course.get('courseNumber')}: {course.get('courseTitle')}',
                             'department': course.get('department'),
-                            'min units': course.get('minUnits'),
-                            'max units': course.get('maxUnits'),
-                            'course attributes': course.get('courseAttributes', None),
-                            'cross listed courses': course.get('visibleCrossListedCourses', None),
-                            'requisites': course.get('requisites', None)
+                            'units': [course.get('minUnits'), course.get('maxUnits')],
+                            'course attributes': course.get('courseAttributes'),
+                            'cross-listed courses': course.get('visibleCrossListedCourses'),
+                            'requisites': course.get('requisites')
                         }
                         courses.append(course_info)
-print(courses)
 # print(articulations)
+for template_cell in articulations:
+    receiving_course = template_cell['articulation']['course']
+    receiving_course_name =  f'{receiving_course.get('prefix')} {receiving_course.get('courseNumber')}: {receiving_course.get('courseTitle')}'
+    for course in courses:
+        if course['course'] == receiving_course_name:
+            print(course['course'])
+            print(template_cell['articulation']['sendingArticulation'])
+    # print(receiving_course_name)
