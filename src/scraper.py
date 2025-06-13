@@ -22,10 +22,45 @@ def ensure_bs4_tag(tag: Any) -> bs4.element.Tag:
         raise TypeError(f"Expected a BeautifulSoup Tag, got {type(tag)} instead.")
 
 class Scraper:
-    def __init__(self, url, receiving_instution_name, sending_institution_name):
+    def __init__(self, url, receiving_instution_name, sending_institution_name): # TODO: could remove this url varible
         self.url = url
         self.receiving_instution_name = receiving_instution_name
         self.sending_institution_name = sending_institution_name
+    
+    def get_major_from_aggreement(self, soup: bs4.BeautifulSoup) -> str:
+        """
+        Extract the major name from an agreement page's title.
+        
+        This method parses the title text of a BeautifulSoup object to extract
+        the major name. It expects the title format to be:
+        "YYYY-YYYY <major_name>, <additional_info>"
+        
+        The method finds the major name between the year (first 9 characters)
+        and the first comma in the title.
+        
+        Args:
+            soup (bs4.BeautifulSoup): BeautifulSoup object containing the parsed HTML with a title element.
+        
+        Returns:
+            str: The extracted major name, stripped of leading/trailing whitespace.
+        
+        Raises:
+            ValueError: If no comma is found in the title text, if the title is missing, or if any other extraction error occurs.
+        
+        Example:
+            If title text is "2024-2025 Computer Science, B.A. Agreement"
+            Returns: "Computer Science"
+        """
+        try:
+            title_text = soup.title.text.strip() # type: ignore : saved by try ignore
+            comma_pos = title_text.find(',')
+            if comma_pos == -1:
+                raise ValueError("No comma found in title text to extract major.")
+            year_cutoff = 9 # position where the year ends (first 5 characters ex: 2024-2025)
+            major = title_text[year_cutoff:comma_pos:].strip()
+            return major
+        except Exception as e:
+            raise ValueError(f"Failed to extract major from title text: {e}") from e
 
     def clean_units(self, units: str) -> float:
         """
@@ -96,10 +131,10 @@ class Scraper:
         bracket_content = ensure_bs4_tag(bracket.find('div', class_='bracketContent'))
         
         # make sure we only have ands
-        conjunctions = bracket_content.find_all('awc-view-conjunction')
-        if len(conjunctions) == 0:
+        cojunctions = bracket_content.find_all('awc-view-conjunction')
+        if len(cojunctions) == 0:
             raise ValueError("No conjunctions found in bracket content")
-        for conjunction in conjunctions:
+        for conjunction in cojunctions:
             if conjunction.text.strip() != 'And':
                 raise ValueError(f"Unexpected conjunction: {conjunction.text.strip()} in bracket")
         
@@ -265,6 +300,7 @@ class Scraper:
         ### Returns:
             list: A list of dictionaries containing receiving and sending courses.
         """
+        name = self.get_major_from_aggreement(soup)
         articRows = soup.find_all('div', class_='articRow')
         articulations = []
         
@@ -278,9 +314,50 @@ class Scraper:
                 raise
         
         return {
-            # TODO: Missing major
             "type": "Articulation Agreement", # only thing supported for now
+            "name": name,
             "receivingInstitution": self.receiving_instution_name,
             "sendingInstitution": self.sending_institution_name,
             "articulations": articulations
         }
+        
+
+async def scrape_url(url: str, receiving_institution_name: str, sending_institution_name: str) -> dict:
+    """
+    ### Description:
+        Scrape the given URL and return the processed data.
+    ### Args:
+        url (str): The URL to scrape.
+        receiving_institution_name (str): The name of the receiving institution.
+        sending_institution_name (str): The name of the sending institution.
+    ### Returns:
+        dict: The processed data from the scraped page.
+    """
+    playwright = await async_playwright().start()
+    browser = await playwright.chromium.launch(headless=True)
+    page = await browser.new_page()
+    await page.goto(url, wait_until='networkidle')
+    await page.wait_for_selector('.articRow') # wait until at least one articRow is loaded
+    
+    content = await page.content()
+    soup = BeautifulSoup(content, 'lxml')
+    # print(f"Content: \n {soup.prettify()}")
+    scraper = Scraper(url, receiving_institution_name, sending_institution_name)
+    try:
+        data = scraper.process_page(soup)
+        return data
+    except ValueError as e:
+        print(f"Error processing page: {e}")
+        raise
+    
+if __name__ == "__main__":
+    import asyncio
+    url = "https://assist.org/transfer/results?year=75&institution=79&agreement=113&agreementType=from&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F113%2Fto%2F79%2FMajor%2F607b828c-8ba3-411b-7de1-08dcb87d5deb"
+    receiving_institution_name = "Receiving Institution"
+    sending_institution_name = "Sending Institution"
+    
+    try:
+        data = asyncio.run(scrape_url(url, receiving_institution_name, sending_institution_name))
+        print(data)
+    except Exception as e:
+        print(f"An error occurred: {e}")
