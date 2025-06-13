@@ -64,7 +64,6 @@ async def scrape_breadth():
 
         breadths = soup.find_all('div', class_='rowReceiving')
         for breadth in breadths:
-            # content = breadth.select_one('div.requirementOrGEArea > div.content').find('div', class_='content')
             if breadth.find('div', class_='requirementOrGEArea') is None:
                 receiving_breadth__course_num = breadth.find_next(class_='prefixCourseNumber').text.strip()
                 receiving_breadth__course_title = breadth.find_next(class_='courseTitle').text.strip()
