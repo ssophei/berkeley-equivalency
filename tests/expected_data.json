@@ -3,6 +3,7 @@
         "type": "Articulation Agreement",
         "receivingInstitution": "University of California, Berkeley",
         "sendingInstitution": "De Anza College",
+        "name": "Aerospace Engineering",
         "articulations": [
             {
                 "receiving": {
