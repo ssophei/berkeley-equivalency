@@ -1,0 +1,781 @@
+{
+    "result": {
+        "name": "English, B.A.",
+        "type": "Major",
+        "publishDate": "2025-05-05T16:08:12.8638446",
+        "receivingInstitution": "{\"id\":79,\"code\":\"UCB     \",\"isCommunityCollege\":false,\"category\":\"UC\",\"termType\":\"Semester\",\"names\":[{\"name\":\"University of California, Berkeley\",\"hasDepartments\":true,\"fromYear\":0,\"hideInList\":false}],\"termTypeAcademicYears\":[{\"termType\":\"Semester\",\"fromYear\":1980}],\"beginId\":31,\"endId\":null}",
+        "sendingInstitution": "{\"id\":124,\"code\":\"IRVINE  \",\"isCommunityCollege\":true,\"category\":\"CCC\",\"termType\":\"Semester\",\"names\":[{\"name\":\"Irvine Valley College\",\"hasDepartments\":true,\"fromYear\":0,\"hideInList\":false}],\"termTypeAcademicYears\":[{\"termType\":\"Semester\",\"fromYear\":2019},{\"termType\":\"Semester\",\"fromYear\":1980}],\"beginId\":31,\"endId\":null}",
+        "academicYear": "{\"id\":75,\"code\":\"2024-2025\",\"beginDate\":\"2024-10-01T00:00:00\",\"endDate\":\"2025-10-01T00:00:00\",\"isOpenForMaintenance\":true,\"isOpenForPublic\":true,\"isOpenForReporting\":true,\"isLocked\":false}",
+        "templateAssets": [
+            {
+                "type": "GeneralText",
+                "content": "<p><strong>COLLEGE ADMISSIONS REQUIREMENTS FOR TRANSFER STUDENTS&nbsp;</strong></p><p><br></p><p><strong>THIS MAJOR IS OFFERED BY THE COLLEGE OF LETTERS AND SCIENCE (L&amp;S)</strong></p><p><br></p><p><strong>IMPORTANT information for students applying for admission to L&amp;S for the fall 2025 application cycle and beyond</strong></p><p><br></p><p>Completion of Essential Skills requirements (Reading &amp; Composition, Quantitative Reasoning, and Foreign Language) or</p><p>Cal-GETC/IGETC will no longer be a requirement for admission; however, completion of either is<em> </em><strong><em>strongly recommended</em></strong></p><p>prior to enrollment at UC Berkeley to ensure timely degree progress.&nbsp;<span style=\"font-size: 14px;\">For more information see the </span>see the New Policies </p><p>for Transfer Student Applicants website for L&amp;S: </p><p><a href=\"https://ls.berkeley.edu/prospective-students/new-policies-transfer-student-applicants\" rel=\"noopener noreferrer\" target=\"_blank\">https://ls.berkeley.edu/prospective-students/new-policies-transfer-student-applicants</a></p><p><span style=\"font-size: 14px;\">&nbsp;</span></p><p><br></p><p><strong>By the end of the spring term preceding fall enrollment at Berkeley, you must complete</strong>:&nbsp;</p><p><br></p><p>1) <a href=\"https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/preparing-to-transfer/basic-requirements.html\" rel=\"noopener noreferrer\" target=\"_blank\">The 7-course pattern </a>&nbsp;(as found in the UC Transfer Admission Eligibility Courses Menu in ASSIST):</p><p class=\"ql-indent-1\">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Two transferable courses in English composition;</p><p class=\"ql-indent-1\">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One transferable course in mathematical concepts and quantitative reasoning;</p><p class=\"ql-indent-1\">·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Four transferable college courses chosen from at least two of the following subject areas:</p><p class=\"ql-indent-2\">o&nbsp;&nbsp;arts and humanities</p><p class=\"ql-indent-2\">o&nbsp;&nbsp;social and behavioral sciences</p><p class=\"ql-indent-2\">o&nbsp;&nbsp;physical and biological sciences</p><p><br></p><p>AND</p><p><br></p><p>2) <strong>Major Requirements</strong>:&nbsp;</p><p>Follow the guidance on preparation for this major below.&nbsp;</p><p><br></p><p><strong>For more information on admission to UC Berkeley</strong>:&nbsp;</p><p><a href=\"http://admissions.berkeley.edu\" rel=\"noopener noreferrer\" target=\"_blank\">http://admissions.berkeley.edu</a>&nbsp;&nbsp;</p><p><br></p><p><strong>For specific information on transfer admission to UC Berkeley: </strong></p><p><a href=\"https://admissions.berkeley.edu/apply-to-berkeley/transfer-students/transfer-requirements/\" rel=\"noopener noreferrer\" target=\"_blank\">https://admissions.berkeley.edu/apply-to-berkeley/transfer-students/transfer-requirements/</a>&nbsp;</p><p><br></p><p><strong>For more information on majors at UC Berkeley</strong>:</p><p>Berkeley Academic Guide: <a href=\"http://guide.berkeley.edu\" rel=\"noopener noreferrer\" target=\"_blank\">http://guide.berkeley.edu</a>&nbsp;</p>",
+                "groupId": "15e66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 1,
+                "area": "General"
+            },
+            {
+                "type": "GeneralText",
+                "content": "<p><strong>To prepare</strong> for the English Major, complete UC-transferable courses in literary analysis and the history of literature written in English. These do not include basic composition and technical writing classes. If your course-work has not been approved on Assist for articulation with the Berkeley requirements listed below, retain syllabi and reading lists for evaluation by the department. You do not have to complete all lower division courses at your Community College (CC). The more transferable classes you take at your CC, the more progress you will have made in the English major upon starting at Cal. </p><p><br></p><p><strong>English 45A</strong> - Literature in English: Through Milton</p><p><strong>English 45B</strong> - Literature in English: The Late-17th through the Mid-19th Century</p><p><strong>English 45C</strong> - Literature in English: The Mid-19th through the Mid-20th Century</p><p><strong>English 17</strong> - Shakespeare</p><p><strong>English 90</strong> - Practices of Literary Study</p><p><br></p><p class=\"ql-indent-1\"><em>Notes: </em></p><p><br></p><p class=\"ql-indent-1\">The following classes must be taken for a letter grade: English 45A, 45B, 45C, Shakespeare, English 90.</p><p class=\"ql-indent-1\">Students should complete as many lower division major requirements (Engl 45A, 45B, 45C, Engl 17, and </p><p class=\"ql-indent-1\">Engl 90 equivalents) as possible before transferring to UC Berkeley as an English major. To see requirements </p><p class=\"ql-indent-1\">for the major after you transfer, please see our website. </p><p><br></p><p><strong>For more information on the major:</strong></p><p>Chloe Keller and Jacki Valadez, Undergraduate Advisers</p><p>Department of English</p><p><a href=\"mailto:chloekeller@berkeley.edu\" rel=\"noopener noreferrer\" target=\"_blank\">chloekeller@berkeley.edu</a>; <a href=\"mailto:jvaladez@berkeley.edu\" rel=\"noopener noreferrer\" target=\"_blank\">jvaladez@berkeley.edu</a></p><p>(510) 642-3467</p><p><a href=\"https://english.berkeley.edu/undergraduate/the_major\" rel=\"noopener noreferrer\" target=\"_blank\">https://english.berkeley.edu/undergraduate/the_major</a></p>",
+                "groupId": "4be86f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 3,
+                "area": "General"
+            },
+            {
+                "type": "RequirementTitle",
+                "content": "LOWER DIVISION MAJOR REQUIREMENTS",
+                "groupId": "eefc7845-6887-ef11-8474-000d3a37e3b6",
+                "position": 0,
+                "area": "Requirements"
+            },
+            {
+                "type": "RequirementGroup",
+                "hideSectionLetters": true,
+                "sections": [
+                    {
+                        "type": "Section",
+                        "rows": [
+                            {
+                                "position": 1,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 352024,
+                                            "courseTitle": "Literature in English (Through Milton)",
+                                            "courseNumber": "45A",
+                                            "prefix": "ENGLISH",
+                                            "prefixParentId": 2701,
+                                            "prefixDescription": "English",
+                                            "departmentParentId": 5059,
+                                            "department": "English",
+                                            "begin": "F2000",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "English",
+                                                    "pathwayId": 11,
+                                                    "pathwayCode": "English",
+                                                    "expectationName": "C1-Survey of British Lit to 1850",
+                                                    "expectationId": 54,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "ff6542f0-f768-4b80-bee7-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 3,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 283185,
+                                            "courseTitle": "Literature in English (Mid-19th through the 20th Century)",
+                                            "courseNumber": "45C",
+                                            "prefix": "ENGLISH",
+                                            "prefixParentId": 2701,
+                                            "prefixDescription": "English",
+                                            "departmentParentId": 5059,
+                                            "department": "English",
+                                            "begin": "F2000",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "English",
+                                                    "pathwayId": 11,
+                                                    "pathwayCode": "English",
+                                                    "expectationName": "C2-Survey of Brit and/or Am. Lit (1860-present)",
+                                                    "expectationId": 55,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "7d8b776d-98e0-433f-bee8-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 4,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 378788,
+                                            "courseTitle": "Practices of Literary Study",
+                                            "courseNumber": "90",
+                                            "prefix": "ENGLISH",
+                                            "prefixParentId": 2701,
+                                            "prefixDescription": "English",
+                                            "departmentParentId": 5059,
+                                            "department": "English",
+                                            "begin": "F2021",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": []
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "8f33d00a-f5aa-4f8a-bee9-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 2,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 276766,
+                                            "courseTitle": "Literature in English (Late 17th through the mid-19th Century)",
+                                            "courseNumber": "45B",
+                                            "prefix": "ENGLISH",
+                                            "prefixParentId": 2701,
+                                            "prefixDescription": "English",
+                                            "departmentParentId": 5059,
+                                            "department": "English",
+                                            "begin": "F2020",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "English",
+                                                    "pathwayId": 11,
+                                                    "pathwayCode": "English",
+                                                    "expectationName": "C1-Survey of British Lit to 1850",
+                                                    "expectationId": 54,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "7d89b378-f26c-4c83-beea-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 0,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 351699,
+                                            "courseTitle": "Shakespeare",
+                                            "courseNumber": "17",
+                                            "prefix": "ENGLISH",
+                                            "prefixParentId": 2701,
+                                            "prefixDescription": "English",
+                                            "departmentParentId": 5059,
+                                            "department": "English",
+                                            "begin": "F1990",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": []
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "8cca4fdc-6650-4032-beeb-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            }
+                        ],
+                        "advisements": [],
+                        "position": 0,
+                        "attributes": []
+                    }
+                ],
+                "attributes": [],
+                "showConjunctionBetweenSections": false,
+                "academicYearId": 0,
+                "institutionParentId": 0,
+                "instruction": null,
+                "advisements": [],
+                "groupId": "4ce86f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 1,
+                "area": "Requirements"
+            },
+            {
+                "type": "GeneralTitle",
+                "content": "PROGRAM",
+                "groupId": "4de86f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 2,
+                "area": "General"
+            },
+            {
+                "type": "GeneralTitle",
+                "content": "College of Letters and Science",
+                "groupId": "4ee86f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 0,
+                "area": "General"
+            }
+        ],
+        "articulations": [
+            {
+                "templateCellId": "ff6542f0-f768-4b80-bee7-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 352024,
+                        "courseTitle": "Literature in English (Through Milton)",
+                        "courseNumber": "45A",
+                        "prefix": "ENGLISH",
+                        "prefixParentId": 2701,
+                        "prefixDescription": "English",
+                        "departmentParentId": 5059,
+                        "department": "English",
+                        "begin": "F2000",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "English",
+                                "pathwayId": 11,
+                                "pathwayCode": "English",
+                                "expectationName": "C1-Survey of British Lit to 1850",
+                                "expectationId": 54,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 197990,
+                                        "courseTitle": "Survey of British Literature to 1776",
+                                        "courseNumber": "20",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2002",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "7d8b776d-98e0-433f-bee8-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 283185,
+                        "courseTitle": "Literature in English (Mid-19th through the 20th Century)",
+                        "courseNumber": "45C",
+                        "prefix": "ENGLISH",
+                        "prefixParentId": 2701,
+                        "prefixDescription": "English",
+                        "departmentParentId": 5059,
+                        "department": "English",
+                        "begin": "F2000",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "English",
+                                "pathwayId": 11,
+                                "pathwayCode": "English",
+                                "expectationName": "C2-Survey of Brit and/or Am. Lit (1860-present)",
+                                "expectationId": 55,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 336331,
+                                        "courseTitle": "British Literature from Blake to the Present",
+                                        "courseNumber": "21",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2015",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    },
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 216163,
+                                        "courseTitle": "American Literature since the Civil War",
+                                        "courseNumber": "23",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2023",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 1,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "8f33d00a-f5aa-4f8a-bee9-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 378788,
+                        "courseTitle": "Practices of Literary Study",
+                        "courseNumber": "90",
+                        "prefix": "ENGLISH",
+                        "prefixParentId": 2701,
+                        "prefixDescription": "English",
+                        "departmentParentId": 5059,
+                        "department": "English",
+                        "begin": "F2021",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": []
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 168518,
+                                        "courseTitle": "Introduction to Short Fiction",
+                                        "courseNumber": "31",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F1995",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": 179,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 3,
+                                "type": "CourseGroup"
+                            },
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 335990,
+                                        "courseTitle": "Introduction to Literature",
+                                        "courseNumber": "1",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F1995",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": 179,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            },
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 160316,
+                                        "courseTitle": "Introduction to the Novel",
+                                        "courseNumber": "30",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F1995",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": 179,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 2,
+                                "type": "CourseGroup"
+                            },
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 385660,
+                                        "courseTitle": "Introduction to Literature Honors",
+                                        "courseNumber": "1H",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2023",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": 291,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 1,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [
+                            {
+                                "id": "77bef115-e966-49f2-7113-08dcb87db3b0",
+                                "sendingArticulationId": "f48ff363-c2c7-4372-aded-08dcb87d885e",
+                                "groupConjunction": "Or",
+                                "sendingCourseGroupBeginPosition": 0,
+                                "sendingCourseGroupEndPosition": 1
+                            },
+                            {
+                                "id": "66deb541-f35b-4375-1885-08dd34cdf2d2",
+                                "sendingArticulationId": "f48ff363-c2c7-4372-aded-08dcb87d885e",
+                                "groupConjunction": "Or",
+                                "sendingCourseGroupBeginPosition": 1,
+                                "sendingCourseGroupEndPosition": 2
+                            },
+                            {
+                                "id": "c814dec5-895a-4d34-7114-08dcb87db3b0",
+                                "sendingArticulationId": "f48ff363-c2c7-4372-aded-08dcb87d885e",
+                                "groupConjunction": "Or",
+                                "sendingCourseGroupBeginPosition": 2,
+                                "sendingCourseGroupEndPosition": 3
+                            }
+                        ],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "7d89b378-f26c-4c83-beea-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 276766,
+                        "courseTitle": "Literature in English (Late 17th through the mid-19th Century)",
+                        "courseNumber": "45B",
+                        "prefix": "ENGLISH",
+                        "prefixParentId": 2701,
+                        "prefixDescription": "English",
+                        "departmentParentId": 5059,
+                        "department": "English",
+                        "begin": "F2020",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "English",
+                                "pathwayId": 11,
+                                "pathwayCode": "English",
+                                "expectationName": "C1-Survey of British Lit to 1850",
+                                "expectationId": 54,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 203718,
+                                        "courseTitle": "American Literature through the Civil War",
+                                        "courseNumber": "22",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2023",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 1,
+                                        "type": "Course"
+                                    },
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 336331,
+                                        "courseTitle": "British Literature from Blake to the Present",
+                                        "courseNumber": "21",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2015",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "8cca4fdc-6650-4032-beeb-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 351699,
+                        "courseTitle": "Shakespeare",
+                        "courseNumber": "17",
+                        "prefix": "ENGLISH",
+                        "prefixParentId": 2701,
+                        "prefixDescription": "English",
+                        "departmentParentId": 5059,
+                        "department": "English",
+                        "begin": "F1990",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": []
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 233044,
+                                        "courseTitle": "Introduction to Shakespeare",
+                                        "courseNumber": "43",
+                                        "prefix": "LIT",
+                                        "prefixParentId": 4576,
+                                        "prefixDescription": "English",
+                                        "departmentParentId": 5032,
+                                        "department": "English",
+                                        "begin": "F2002",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            }
+        ],
+        "catalogYear": "{\"receivingCatalogYearBegin\":2024,\"receivingCatalogYearEnd\":2025,\"sendingCatalogYearBegin\":2024,\"sendingCatalogYearEnd\":2025}"
+    },
+    "validationFailure": null,
+    "isSuccessful": true
+}

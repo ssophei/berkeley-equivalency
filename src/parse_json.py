@@ -32,5 +32,5 @@ for template_cell in articulations:
     for course in courses:
         if course['course'] == receiving_course_name:
             print(course['course'])
-            print(template_cell['articulation']['sendingArticulation'])
+            print(template_cell['articulation']['sendingArticulation'].get('items'))
     # print(receiving_course_name)

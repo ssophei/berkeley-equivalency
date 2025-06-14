@@ -1,0 +1,1637 @@
+{
+    "result": {
+        "name": "Data Science, B.A.",
+        "type": "Major",
+        "publishDate": "2025-05-05T16:08:17.3850686",
+        "receivingInstitution": "{\"id\":79,\"code\":\"UCB     \",\"isCommunityCollege\":false,\"category\":\"UC\",\"termType\":\"Semester\",\"names\":[{\"name\":\"University of California, Berkeley\",\"hasDepartments\":true,\"fromYear\":0,\"hideInList\":false}],\"termTypeAcademicYears\":[{\"termType\":\"Semester\",\"fromYear\":1980}],\"beginId\":31,\"endId\":null}",
+        "sendingInstitution": "{\"id\":124,\"code\":\"IRVINE  \",\"isCommunityCollege\":true,\"category\":\"CCC\",\"termType\":\"Semester\",\"names\":[{\"name\":\"Irvine Valley College\",\"hasDepartments\":true,\"fromYear\":0,\"hideInList\":false}],\"termTypeAcademicYears\":[{\"termType\":\"Semester\",\"fromYear\":2019},{\"termType\":\"Semester\",\"fromYear\":1980}],\"beginId\":31,\"endId\":null}",
+        "academicYear": "{\"id\":75,\"code\":\"2024-2025\",\"beginDate\":\"2024-10-01T00:00:00\",\"endDate\":\"2025-10-01T00:00:00\",\"isOpenForMaintenance\":true,\"isOpenForPublic\":true,\"isOpenForReporting\":true,\"isLocked\":false}",
+        "templateAssets": [
+            {
+                "type": "GeneralText",
+                "content": "<p><strong>COLLEGE ADMISSION REQUIREMENTS FOR TRANSFER STUDENTS&nbsp;</strong></p><p><br></p><p><strong>THIS MAJOR IS OFFERED BY THE COLLEGE OF COMPUTING, DATA SCIENCE, AND SOCIETY (CDSS)&nbsp;</strong></p><p><br></p><p>Completion of Cal-GETC/ UC IGETC is not a requirement for admission; however, completion of either</p><p>is<strong><em> strongly recommended</em></strong> prior to enrollment at UC Berkeley to ensure timely degree progress.&nbsp;</p><p><br></p><p><strong>By the end of the spring term preceding fall enrollment at Berkeley, you must complete</strong>:&nbsp;</p><p><br></p><ol><li>&nbsp;<a href=\"https://admission.universityofcalifornia.edu/admission-requirements/transfer-requirements/preparing-to-transfer/basic-requirements.html\" rel=\"noopener noreferrer\" target=\"_blank\">The 7-course pattern</a> (as found in the UC Transfer Admission Eligibility Courses Menu in ASSIST):</li></ol><ul><li>Two transferable courses in English composition;</li><li>One transferable course in mathematical concepts and quantitative reasoning;</li><li>Four transferable college courses chosen from at least two of the following subject areas:</li><li class=\"ql-indent-1\">arts and humanities</li><li class=\"ql-indent-1\">social and behavioral sciences</li><li class=\"ql-indent-1\">physical and biological sciences</li></ul><p>AND&nbsp;</p><p><br></p><p>2) <strong>Major Requirements&nbsp;</strong></p><p><br></p><p>All required courses as noted by your intended major below.&nbsp;</p><p><br></p><p>Only applicants who have completed 100% of items 1 and 2 above will be considered for admission. </p><p>Additional completion of highly recommended courses will serve to strengthen the application.&nbsp;</p><p><br></p><p><strong>For more information on admission to UC Berkeley</strong>:&nbsp;</p><p><a href=\"https://admissions.berkeley.edu&nbsp;\" rel=\"noopener noreferrer\" target=\"_blank\">https://admissions.berkeley.edu&nbsp;</a></p><p><br></p><p><strong>For specific information on transfer admission to UC Berkeley:</strong></p><p><a href=\"https://admissions.berkeley.edu/apply-to-berkeley/transfer-students/transfer-requirements/\" rel=\"noopener noreferrer\" target=\"_blank\">https://admissions.berkeley.edu/apply-to-berkeley/transfer-students/transfer-requirements/</a>&nbsp;</p><p><br></p><p><strong>For more information on majors at UC Berkeley</strong>:&nbsp;</p><p>Berkeley Academic Guide: <a href=\"https://guide.berkeley.edu\" rel=\"noopener noreferrer\" target=\"_blank\">https://guide.berkeley.edu</a></p>",
+                "groupId": "69db6f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 1,
+                "area": "General"
+            },
+            {
+                "type": "GeneralTitle",
+                "content": "exam credit",
+                "groupId": "fae66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 6,
+                "area": "General"
+            },
+            {
+                "type": "RequirementGroup",
+                "hideSectionLetters": false,
+                "sections": [
+                    {
+                        "type": "Section",
+                        "rows": [
+                            {
+                                "position": 0,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 351686,
+                                            "courseTitle": "Calculus",
+                                            "courseNumber": "1A",
+                                            "prefix": "MATH",
+                                            "prefixParentId": 9987,
+                                            "prefixDescription": "Mathematics",
+                                            "departmentParentId": 9010,
+                                            "department": "Mathematics",
+                                            "begin": "F1990",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "Business Administration",
+                                                    "pathwayId": 4,
+                                                    "pathwayCode": "Business-Administration",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 14,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Computer Science",
+                                                    "pathwayId": 8,
+                                                    "pathwayCode": "Computer-Science",
+                                                    "expectationName": "C4-Single Var. Calc.",
+                                                    "expectationId": 37,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Economics",
+                                                    "pathwayId": 9,
+                                                    "pathwayCode": "Economics",
+                                                    "expectationName": "C3-Calculus",
+                                                    "expectationId": 45,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Biochemistry",
+                                                    "pathwayId": 2,
+                                                    "pathwayCode": "Biochemistry",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 6,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Molecular Biology",
+                                                    "pathwayId": 16,
+                                                    "pathwayCode": "Molecular-Biology",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 83,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Biology",
+                                                    "pathwayId": 3,
+                                                    "pathwayCode": "Biology",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 10,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Cell Biology",
+                                                    "pathwayId": 5,
+                                                    "pathwayCode": "Cell-Biology",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 22,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Chemistry",
+                                                    "pathwayId": 6,
+                                                    "pathwayCode": "Chemistry",
+                                                    "expectationName": "C4-Calculus",
+                                                    "expectationId": 27,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mathematics",
+                                                    "pathwayId": 14,
+                                                    "pathwayCode": "Mathematics",
+                                                    "expectationName": "C1-Single Var. Calc. Seq.",
+                                                    "expectationId": 66,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mechanical Engineering",
+                                                    "pathwayId": 15,
+                                                    "pathwayCode": "Mechanical-Engineering",
+                                                    "expectationName": "C1-Single Var. Calc.",
+                                                    "expectationId": 71,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Physics",
+                                                    "pathwayId": 18,
+                                                    "pathwayCode": "Physics",
+                                                    "expectationName": "C2-Calculus",
+                                                    "expectationId": 91,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Psychology",
+                                                    "pathwayId": 20,
+                                                    "pathwayCode": "Psychology",
+                                                    "expectationName": "C3-Calculus I",
+                                                    "expectationId": 102,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "2e0ad724-c0a4-48d4-ba5d-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 1,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 245397,
+                                            "courseTitle": "Calculus",
+                                            "courseNumber": "1B",
+                                            "prefix": "MATH",
+                                            "prefixParentId": 9987,
+                                            "prefixDescription": "Mathematics",
+                                            "departmentParentId": 9010,
+                                            "department": "Mathematics",
+                                            "begin": "F1990",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "Business Administration",
+                                                    "pathwayId": 4,
+                                                    "pathwayCode": "Business-Administration",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 14,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Computer Science",
+                                                    "pathwayId": 8,
+                                                    "pathwayCode": "Computer-Science",
+                                                    "expectationName": "C4-Single Var. Calc.",
+                                                    "expectationId": 37,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Economics",
+                                                    "pathwayId": 9,
+                                                    "pathwayCode": "Economics",
+                                                    "expectationName": "C3-Calculus",
+                                                    "expectationId": 45,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Biochemistry",
+                                                    "pathwayId": 2,
+                                                    "pathwayCode": "Biochemistry",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 6,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Cell Biology",
+                                                    "pathwayId": 5,
+                                                    "pathwayCode": "Cell-Biology",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 22,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Molecular Biology",
+                                                    "pathwayId": 16,
+                                                    "pathwayCode": "Molecular-Biology",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 83,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Biology",
+                                                    "pathwayId": 3,
+                                                    "pathwayCode": "Biology",
+                                                    "expectationName": "C3-Single Var. Calc.",
+                                                    "expectationId": 10,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Chemistry",
+                                                    "pathwayId": 6,
+                                                    "pathwayCode": "Chemistry",
+                                                    "expectationName": "C4-Calculus",
+                                                    "expectationId": 27,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mathematics",
+                                                    "pathwayId": 14,
+                                                    "pathwayCode": "Mathematics",
+                                                    "expectationName": "C1-Single Var. Calc. Seq.",
+                                                    "expectationId": 66,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mechanical Engineering",
+                                                    "pathwayId": 15,
+                                                    "pathwayCode": "Mechanical-Engineering",
+                                                    "expectationName": "C1-Single Var. Calc.",
+                                                    "expectationId": 71,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Physics",
+                                                    "pathwayId": 18,
+                                                    "pathwayCode": "Physics",
+                                                    "expectationName": "C2-Calculus",
+                                                    "expectationId": 91,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "034aaa1f-8d38-4201-ba5e-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            }
+                        ],
+                        "advisements": [],
+                        "position": 1,
+                        "attributes": []
+                    },
+                    {
+                        "type": "Section",
+                        "rows": [
+                            {
+                                "position": 0,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 385829,
+                                            "courseTitle": "Linear Algebra",
+                                            "courseNumber": "56",
+                                            "prefix": "MATH",
+                                            "prefixParentId": 9987,
+                                            "prefixDescription": "Mathematics",
+                                            "departmentParentId": 9010,
+                                            "department": "Mathematics",
+                                            "begin": "F2023",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": []
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "f430c7ef-1be0-429b-ba5f-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 1,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 246154,
+                                            "courseTitle": "Linear Algebra and Differential Equations",
+                                            "courseNumber": "54",
+                                            "prefix": "MATH",
+                                            "prefixParentId": 9987,
+                                            "prefixDescription": "Mathematics",
+                                            "departmentParentId": 9010,
+                                            "department": "Mathematics",
+                                            "begin": "F1994",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "Computer Science",
+                                                    "pathwayId": 8,
+                                                    "pathwayCode": "Computer-Science",
+                                                    "expectationName": "C8-Diff. Eq.",
+                                                    "expectationId": 41,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Computer Science",
+                                                    "pathwayId": 8,
+                                                    "pathwayCode": "Computer-Science",
+                                                    "expectationName": "C7-Linear Algebra",
+                                                    "expectationId": 40,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Chemistry",
+                                                    "pathwayId": 6,
+                                                    "pathwayCode": "Chemistry",
+                                                    "expectationName": "C6-Diff Eq",
+                                                    "expectationId": 29,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mathematics",
+                                                    "pathwayId": 14,
+                                                    "pathwayCode": "Mathematics",
+                                                    "expectationName": "C3-Diff. Eq.",
+                                                    "expectationId": 68,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mathematics",
+                                                    "pathwayId": 14,
+                                                    "pathwayCode": "Mathematics",
+                                                    "expectationName": "C4-Linear Alg.",
+                                                    "expectationId": 69,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mechanical Engineering",
+                                                    "pathwayId": 15,
+                                                    "pathwayCode": "Mechanical-Engineering",
+                                                    "expectationName": "C3-Linear Algebra",
+                                                    "expectationId": 73,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Mechanical Engineering",
+                                                    "pathwayId": 15,
+                                                    "pathwayCode": "Mechanical-Engineering",
+                                                    "expectationName": "C4-Diff. Eq.",
+                                                    "expectationId": 74,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Physics",
+                                                    "pathwayId": 18,
+                                                    "pathwayCode": "Physics",
+                                                    "expectationName": "C4-Linear Algebra",
+                                                    "expectationId": 93,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                },
+                                                {
+                                                    "pathwayName": "Physics",
+                                                    "pathwayId": 18,
+                                                    "pathwayCode": "Physics",
+                                                    "expectationName": "C5-Diff. Eq.",
+                                                    "expectationId": 94,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "19a1678a-b530-4a42-ba60-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            }
+                        ],
+                        "advisements": [
+                            {
+                                "type": "NFollowing",
+                                "amount": 1.0,
+                                "amountUnitType": "Course",
+                                "position": 0,
+                                "selectionType": "Complete"
+                            }
+                        ],
+                        "position": 2,
+                        "attributes": []
+                    },
+                    {
+                        "type": "SectionHeader",
+                        "content": "REQUIRED COURSES FOR ADMISSION",
+                        "position": 0,
+                        "attributes": [
+                            {
+                                "position": 0,
+                                "content": "Must be taken for a letter  grade"
+                            }
+                        ]
+                    }
+                ],
+                "attributes": [],
+                "showConjunctionBetweenSections": false,
+                "academicYearId": 0,
+                "institutionParentId": 0,
+                "instruction": {
+                    "type": "Conjunction",
+                    "conjunction": "And",
+                    "id": "656b17fd-8936-4682-b134-08dcb87d5e28",
+                    "selectionType": "Complete"
+                },
+                "advisements": [],
+                "groupId": "fbe66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 1,
+                "area": "Requirements"
+            },
+            {
+                "type": "GeneralTitle",
+                "content": "COLLEGE OF COMPUTING, DATA SCIENCE, AND SOCIETY",
+                "groupId": "fce66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 0,
+                "area": "General"
+            },
+            {
+                "type": "GeneralText",
+                "content": "<p>Acceptable exam credit:</p><p><br></p><ul><li>AP/IB exam scores are only accepted for lower division math requirements for the Data Science major in accordance with<a href=\"https://math.berkeley.edu/courses/choosing/high-school-exam-credits\" rel=\"noopener noreferrer\" target=\"_blank\"> </a><a href=\"https://math.berkeley.edu/courses/overview/high-school-exam-credits\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(0, 0, 238);\">Math Department guidelines</a><a href=\"https://math.berkeley.edu/courses/choosing/high-school-exam-credits\" rel=\"noopener noreferrer\" target=\"_blank\">.</a>&nbsp;</li></ul><p><strong>﻿</strong></p><ul><li>Data Science does not accept exam credit to meet any other lower division requirements (ie lower division Domain Emphasis)</li></ul>",
+                "groupId": "fde66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 7,
+                "area": "General"
+            },
+            {
+                "type": "RequirementGroup",
+                "hideSectionLetters": false,
+                "sections": [
+                    {
+                        "type": "Section",
+                        "rows": [
+                            {
+                                "position": 0,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 378343,
+                                            "courseTitle": "Foundations of Data Science",
+                                            "courseNumber": "C8",
+                                            "prefix": "DATA",
+                                            "prefixParentId": 16874,
+                                            "prefixDescription": "Data Science, Undergraduate",
+                                            "departmentParentId": 13979,
+                                            "department": "Data Science Undergraduate Studies ",
+                                            "begin": "F2020",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": []
+                                        },
+                                        "visibleCrossListedCourses": [
+                                            {
+                                                "course": {
+                                                    "courseIdentifierParentId": 300361,
+                                                    "courseTitle": "Foundations of Data Science",
+                                                    "courseNumber": "C8",
+                                                    "prefix": "STAT",
+                                                    "prefixParentId": 3366,
+                                                    "prefixDescription": "Statistics",
+                                                    "departmentParentId": 12545,
+                                                    "department": "Statistics",
+                                                    "begin": "F2020",
+                                                    "end": "",
+                                                    "minUnits": 4.0,
+                                                    "maxUnits": 4.0,
+                                                    "pathways": []
+                                                }
+                                            },
+                                            {
+                                                "course": {
+                                                    "courseIdentifierParentId": 367471,
+                                                    "courseTitle": "Foundations of Data Science",
+                                                    "courseNumber": "C8",
+                                                    "prefix": "COMPSCI",
+                                                    "prefixParentId": 520,
+                                                    "prefixDescription": "Computer Science",
+                                                    "departmentParentId": 3212,
+                                                    "department": "Computer Science",
+                                                    "begin": "F2020",
+                                                    "end": "",
+                                                    "minUnits": 4.0,
+                                                    "maxUnits": 4.0,
+                                                    "pathways": []
+                                                }
+                                            },
+                                            {
+                                                "course": {
+                                                    "courseIdentifierParentId": 367470,
+                                                    "courseTitle": "Foundations of Data Science",
+                                                    "courseNumber": "C8",
+                                                    "prefix": "INFO",
+                                                    "prefixParentId": 16301,
+                                                    "prefixDescription": "Information",
+                                                    "departmentParentId": 13486,
+                                                    "department": "Information",
+                                                    "begin": "F2020",
+                                                    "end": "",
+                                                    "minUnits": 4.0,
+                                                    "maxUnits": 4.0,
+                                                    "pathways": []
+                                                }
+                                            }
+                                        ],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "d736fc38-6a3d-4caf-ba61-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            }
+                        ],
+                        "advisements": [],
+                        "position": 1,
+                        "attributes": []
+                    },
+                    {
+                        "type": "Section",
+                        "rows": [
+                            {
+                                "position": 0,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 292039,
+                                            "courseTitle": "The Structure and Interpretation of Computer Programs",
+                                            "courseNumber": "61A",
+                                            "prefix": "COMPSCI",
+                                            "prefixParentId": 520,
+                                            "prefixDescription": "Computer Science",
+                                            "departmentParentId": 3212,
+                                            "department": "Computer Science",
+                                            "begin": "F1996",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "Computer Science",
+                                                    "pathwayId": 8,
+                                                    "pathwayCode": "Computer-Science",
+                                                    "expectationName": "C1-Intro to Programming/CS1",
+                                                    "expectationId": 34,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [
+                                            {
+                                                "position": 0,
+                                                "content": "Preferred course"
+                                            }
+                                        ],
+                                        "id": "f86557f2-5855-4a73-ba62-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            },
+                            {
+                                "position": 1,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 211468,
+                                            "courseTitle": "Introduction to Computer Programming for Scientists and Engineers (MATLAB)",
+                                            "courseNumber": "7",
+                                            "prefix": "ENGIN",
+                                            "prefixParentId": 3543,
+                                            "prefixDescription": "Engineering",
+                                            "departmentParentId": 4737,
+                                            "department": "Engineering",
+                                            "begin": "F2007",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "Mechanical Engineering",
+                                                    "pathwayId": 15,
+                                                    "pathwayCode": "Mechanical-Engineering",
+                                                    "expectationName": "C7-Computer Programming",
+                                                    "expectationId": 77,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "2df974fa-ef58-450c-ba63-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            }
+                        ],
+                        "advisements": [
+                            {
+                                "type": "NFollowing",
+                                "amount": 1.0,
+                                "amountUnitType": "Course",
+                                "position": 0,
+                                "selectionType": "Complete"
+                            }
+                        ],
+                        "position": 2,
+                        "attributes": []
+                    },
+                    {
+                        "type": "Section",
+                        "rows": [
+                            {
+                                "position": 0,
+                                "cells": [
+                                    {
+                                        "type": "Course",
+                                        "course": {
+                                            "courseIdentifierParentId": 256849,
+                                            "courseTitle": "Data Structures",
+                                            "courseNumber": "61B",
+                                            "prefix": "COMPSCI",
+                                            "prefixParentId": 520,
+                                            "prefixDescription": "Computer Science",
+                                            "departmentParentId": 3212,
+                                            "department": "Computer Science",
+                                            "begin": "F1996",
+                                            "end": "",
+                                            "minUnits": 4.0,
+                                            "maxUnits": 4.0,
+                                            "pathways": [
+                                                {
+                                                    "pathwayName": "Computer Science",
+                                                    "pathwayId": 8,
+                                                    "pathwayCode": "Computer-Science",
+                                                    "expectationName": "C2-Data Structures/CS2",
+                                                    "expectationId": 35,
+                                                    "subexpectationName": null,
+                                                    "subexpectationId": 0
+                                                }
+                                            ]
+                                        },
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "courseAttributes": [],
+                                        "id": "ea66bd76-4842-433b-ba64-08dcb87d5e06",
+                                        "position": 0,
+                                        "attributes": []
+                                    }
+                                ],
+                                "attributes": []
+                            }
+                        ],
+                        "advisements": [],
+                        "position": 3,
+                        "attributes": []
+                    },
+                    {
+                        "type": "SectionHeader",
+                        "content": "RECOMMENDED TO COMPLETE PRIOR TO TRANSFER",
+                        "position": 0,
+                        "attributes": [
+                            {
+                                "position": 0,
+                                "content": "Must be taken for a letter  grade"
+                            }
+                        ]
+                    }
+                ],
+                "attributes": [],
+                "showConjunctionBetweenSections": false,
+                "academicYearId": 0,
+                "institutionParentId": 0,
+                "instruction": {
+                    "type": "Conjunction",
+                    "conjunction": "And",
+                    "id": "337b5f57-1083-4c0c-b135-08dcb87d5e28",
+                    "selectionType": "Complete"
+                },
+                "advisements": [],
+                "groupId": "fee66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 3,
+                "area": "Requirements"
+            },
+            {
+                "type": "RequirementTitle",
+                "content": "HIGHLY RECOMMENDED",
+                "groupId": "48de7645-6887-ef11-8474-000d3a37e3b6",
+                "position": 2,
+                "area": "Requirements"
+            },
+            {
+                "type": "RequirementTitle",
+                "content": "MAJOR REQUIREMENTS",
+                "groupId": "83917645-6887-ef11-8474-000d3a37e3b6",
+                "position": 0,
+                "area": "Requirements"
+            },
+            {
+                "type": "GeneralTitle",
+                "content": "IMPORTANT MAJOR INFORMATION",
+                "groupId": "ffe66f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 4,
+                "area": "General"
+            },
+            {
+                "type": "GeneralText",
+                "content": "<p><strong style=\"font-size: 14px;\">DATA SCIENCE</strong><span style=\"font-size: 14px;\"> is a new field of study that combines computational and inferential reasoning to draw conclusions based on data about some aspect of the real world. Data scientists come from all walks of life, all areas of study, and all backgrounds. They share an appreciation for the practical use of mathematical and scientific thinking and the power of computing to understand and solve problems for business, research, and societal impact.&nbsp;</span></p><p><br></p><p><span style=\"font-size: 14px;\">The Data Science Major will equip students to draw sound conclusions from data in context, using knowledge of statistical inference, computational processes, data management strategies, domain knowledge, and theory. Students will learn to carry out analyses of data through the full cycle of the investigative process in scientific and practical contexts. Students will gain understanding of the human and ethical implications of data analysis and integrate that knowledge in designing and carrying out their work.&nbsp;</span></p><p><br></p><p><span style=\"font-size: 14px;\">We strongly encourage you to visit our website for prospective transfer students (link listed below) to learn more about preparing for a major in Data Science at UC Berkeley. Also, please reach out to us via the email address below if you have specific questions about your academic path into data science.&nbsp;</span></p><p><br></p><p><strong style=\"font-size: 14px;\">﻿For more information on this major:</strong><span style=\"font-size: 14px;\">&nbsp;</span></p><p><a href=\"mailto:ds-advising@berkeley.edu\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(0, 0, 238);\">ds-advising@berkeley.edu</a><span style=\"font-size: 14px; color: rgb(0, 0, 238);\">&nbsp;</span></p><p><a href=\"https://data.berkeley.edu/information-prospective-transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(0, 0, 238);\">https://data.berkeley.edu/information-prospective-transfer-students</a></p>",
+                "groupId": "00e76f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 3,
+                "area": "General"
+            },
+            {
+                "type": "GeneralText",
+                "content": "<p><strong style=\"font-size: 14px;\"><em>All coursework towards the major must be taken for a grade.</em></strong></p><p><br></p><p><strong style=\"font-size: 14px;\">Required Courses for Admission to the Major </strong></p><p><br></p><ul><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">MATH 1A &amp; 1B - Calculus I &amp; II&nbsp;</span></li></ul><p class=\"ql-indent-1\"><br></p><ul><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">MATH 56 - Linear Algebra -or- MATH 54 - Linear Algebra and Differential Equations&nbsp;</span></li></ul><p><br></p><ul><li><span style=\"font-size: 14px;\">Data Science does not require full equivalence to Math 54 and will accept just the Linear Algebra course of an articulated Math 54-equivalent series.</span></li></ul><p><br></p><p><strong style=\"font-size: 14px;\">Highly Recommended for Admission to the Major</strong></p><p><br></p><ul><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">﻿DATA/COMPSCI/INFO/STAT/C8 - Foundations of Data Science&nbsp;</span></li></ul><p class=\"ql-indent-1\"><br></p><ul><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">COMPSCI 61A - The Structure and Interpretation of Computer Programs (preferred) -or- ENGIN 7 - Introduction to Computer Programming for Scientists and Engineers&nbsp;</span></li></ul><p class=\"ql-indent-1\"><br></p><ul><li class=\"ql-indent-1\"><span style=\"font-size: 14px;\">COMPSCI 61B - Data Structures&nbsp;</span></li></ul><p><br></p><ul><li><span style=\"font-size: 14px;\">If you see \"Articulation subject to completion of a university course\" below the community college course, then in addition to completing the community college course, you must complete COMPSCI 47B after enrollment at UC Berkeley.&nbsp;</span></li></ul><p><br></p><ul><li><span style=\"font-size: 14px;\">Data C8 and COMPSCI 61A are found at only a few California community colleges. Please visit</span><span style=\"font-size: 14px; color: rgb(68, 71, 70);\"> </span><a href=\"https://data.berkeley.edu/information-prospective-transfer-students\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"font-size: 14px; color: rgb(41, 98, 255);\">this page</a><span style=\"font-size: 14px; color: rgb(68, 71, 70);\"> </span><span style=\"font-size: 14px;\">to see the specific community colleges offering equivalents to Data C8 and COMPSCI 61A.</span><span style=\"font-size: 14px; color: rgb(68, 71, 70);\"> </span><span style=\"font-size: 14px;\">Data Science transfer students are expected to enroll in these classes during their first semester at Berkeley if not completed prior to transfer. If you can’t complete the highly recommended courses, completion of additional courses in computer science/programming (especially Python), statistics and mathematics can strengthen your application.</span></li></ul>",
+                "groupId": "01e76f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 5,
+                "area": "General"
+            },
+            {
+                "type": "GeneralTitle",
+                "content": "program",
+                "groupId": "02e76f45-6887-ef11-8474-000d3a37e3b6",
+                "position": 2,
+                "area": "General"
+            }
+        ],
+        "articulations": [
+            {
+                "templateCellId": "ea66bd76-4842-433b-ba64-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 256849,
+                        "courseTitle": "Data Structures",
+                        "courseNumber": "61B",
+                        "prefix": "COMPSCI",
+                        "prefixParentId": 520,
+                        "prefixDescription": "Computer Science",
+                        "departmentParentId": 3212,
+                        "department": "Computer Science",
+                        "begin": "F1996",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "Computer Science",
+                                "pathwayId": 8,
+                                "pathwayCode": "Computer-Science",
+                                "expectationName": "C2-Data Structures/CS2",
+                                "expectationId": 35,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [
+                                            {
+                                                "position": 0,
+                                                "content": "Must complete an additional university course after transfer to satisfy this requirement"
+                                            }
+                                        ],
+                                        "courseIdentifierParentId": 190594,
+                                        "courseTitle": "Data Structures",
+                                        "courseNumber": "41",
+                                        "prefix": "CS",
+                                        "prefixParentId": 11553,
+                                        "prefixDescription": "Computer Science",
+                                        "departmentParentId": 3244,
+                                        "department": "Computer Science",
+                                        "begin": "F2012",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": 247,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "2df974fa-ef58-450c-ba63-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 211468,
+                        "courseTitle": "Introduction to Computer Programming for Scientists and Engineers (MATLAB)",
+                        "courseNumber": "7",
+                        "prefix": "ENGIN",
+                        "prefixParentId": 3543,
+                        "prefixDescription": "Engineering",
+                        "departmentParentId": 4737,
+                        "department": "Engineering",
+                        "begin": "F2007",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "Mechanical Engineering",
+                                "pathwayId": 15,
+                                "pathwayCode": "Mechanical-Engineering",
+                                "expectationName": "C7-Computer Programming",
+                                "expectationId": 77,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 261750,
+                                        "courseTitle": "Introduction to Programming and Problem Solving with MATLAB",
+                                        "courseNumber": "20",
+                                        "prefix": "ENGR",
+                                        "prefixParentId": 3578,
+                                        "prefixDescription": "Engineering",
+                                        "departmentParentId": 4808,
+                                        "department": "Engineering",
+                                        "begin": "F2014",
+                                        "end": "",
+                                        "minUnits": 3.0,
+                                        "maxUnits": 3.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "19a1678a-b530-4a42-ba60-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 246154,
+                        "courseTitle": "Linear Algebra and Differential Equations",
+                        "courseNumber": "54",
+                        "prefix": "MATH",
+                        "prefixParentId": 9987,
+                        "prefixDescription": "Mathematics",
+                        "departmentParentId": 9010,
+                        "department": "Mathematics",
+                        "begin": "F1994",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "Computer Science",
+                                "pathwayId": 8,
+                                "pathwayCode": "Computer-Science",
+                                "expectationName": "C8-Diff. Eq.",
+                                "expectationId": 41,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Computer Science",
+                                "pathwayId": 8,
+                                "pathwayCode": "Computer-Science",
+                                "expectationName": "C7-Linear Algebra",
+                                "expectationId": 40,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Chemistry",
+                                "pathwayId": 6,
+                                "pathwayCode": "Chemistry",
+                                "expectationName": "C6-Diff Eq",
+                                "expectationId": 29,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mathematics",
+                                "pathwayId": 14,
+                                "pathwayCode": "Mathematics",
+                                "expectationName": "C3-Diff. Eq.",
+                                "expectationId": 68,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mathematics",
+                                "pathwayId": 14,
+                                "pathwayCode": "Mathematics",
+                                "expectationName": "C4-Linear Alg.",
+                                "expectationId": 69,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mechanical Engineering",
+                                "pathwayId": 15,
+                                "pathwayCode": "Mechanical-Engineering",
+                                "expectationName": "C3-Linear Algebra",
+                                "expectationId": 73,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mechanical Engineering",
+                                "pathwayId": 15,
+                                "pathwayCode": "Mechanical-Engineering",
+                                "expectationName": "C4-Diff. Eq.",
+                                "expectationId": 74,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Physics",
+                                "pathwayId": 18,
+                                "pathwayCode": "Physics",
+                                "expectationName": "C4-Linear Algebra",
+                                "expectationId": 93,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Physics",
+                                "pathwayId": 18,
+                                "pathwayCode": "Physics",
+                                "expectationName": "C5-Diff. Eq.",
+                                "expectationId": 94,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 357634,
+                                        "courseTitle": "Elementary Differential Equations Honors",
+                                        "courseNumber": "24H",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 4.0,
+                                        "maxUnits": 4.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    },
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 331471,
+                                        "courseTitle": "Introduction to Linear Algebra",
+                                        "courseNumber": "26",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 4.0,
+                                        "maxUnits": 4.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 1,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 1,
+                                "type": "CourseGroup"
+                            },
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 331471,
+                                        "courseTitle": "Introduction to Linear Algebra",
+                                        "courseNumber": "26",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 4.0,
+                                        "maxUnits": 4.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 1,
+                                        "type": "Course"
+                                    },
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 162744,
+                                        "courseTitle": "Elementary Differential Equations",
+                                        "courseNumber": "24",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 4.0,
+                                        "maxUnits": 4.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [
+                            {
+                                "id": "7f1fcc87-ec37-4752-7116-08dcb87db3b0",
+                                "sendingArticulationId": "461c538d-b737-43d2-adee-08dcb87d885e",
+                                "groupConjunction": "Or",
+                                "sendingCourseGroupBeginPosition": 0,
+                                "sendingCourseGroupEndPosition": 1
+                            }
+                        ],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "034aaa1f-8d38-4201-ba5e-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 245397,
+                        "courseTitle": "Calculus",
+                        "courseNumber": "1B",
+                        "prefix": "MATH",
+                        "prefixParentId": 9987,
+                        "prefixDescription": "Mathematics",
+                        "departmentParentId": 9010,
+                        "department": "Mathematics",
+                        "begin": "F1990",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "Business Administration",
+                                "pathwayId": 4,
+                                "pathwayCode": "Business-Administration",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 14,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Computer Science",
+                                "pathwayId": 8,
+                                "pathwayCode": "Computer-Science",
+                                "expectationName": "C4-Single Var. Calc.",
+                                "expectationId": 37,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Economics",
+                                "pathwayId": 9,
+                                "pathwayCode": "Economics",
+                                "expectationName": "C3-Calculus",
+                                "expectationId": 45,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Biochemistry",
+                                "pathwayId": 2,
+                                "pathwayCode": "Biochemistry",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 6,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Cell Biology",
+                                "pathwayId": 5,
+                                "pathwayCode": "Cell-Biology",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 22,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Molecular Biology",
+                                "pathwayId": 16,
+                                "pathwayCode": "Molecular-Biology",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 83,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Biology",
+                                "pathwayId": 3,
+                                "pathwayCode": "Biology",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 10,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Chemistry",
+                                "pathwayId": 6,
+                                "pathwayCode": "Chemistry",
+                                "expectationName": "C4-Calculus",
+                                "expectationId": 27,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mathematics",
+                                "pathwayId": 14,
+                                "pathwayCode": "Mathematics",
+                                "expectationName": "C1-Single Var. Calc. Seq.",
+                                "expectationId": 66,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mechanical Engineering",
+                                "pathwayId": 15,
+                                "pathwayCode": "Mechanical-Engineering",
+                                "expectationName": "C1-Single Var. Calc.",
+                                "expectationId": 71,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Physics",
+                                "pathwayId": 18,
+                                "pathwayCode": "Physics",
+                                "expectationName": "C2-Calculus",
+                                "expectationId": 91,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 302898,
+                                        "courseTitle": "Analytic Geometry and Calculus II",
+                                        "courseNumber": "3B",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 5.0,
+                                        "maxUnits": 5.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            },
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 360036,
+                                        "courseTitle": "Analytic Geometry and Calculus II Honors",
+                                        "courseNumber": "3BH",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 5.0,
+                                        "maxUnits": 5.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 1,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [
+                            {
+                                "id": "535efa4e-dbcf-468f-7106-08dcb87db3b0",
+                                "sendingArticulationId": "6016289a-4038-41ea-adbb-08dcb87d885e",
+                                "groupConjunction": "Or",
+                                "sendingCourseGroupBeginPosition": 0,
+                                "sendingCourseGroupEndPosition": 1
+                            }
+                        ],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            },
+            {
+                "templateCellId": "2e0ad724-c0a4-48d4-ba5d-08dcb87d5e06",
+                "articulation": {
+                    "type": "Course",
+                    "course": {
+                        "courseIdentifierParentId": 351686,
+                        "courseTitle": "Calculus",
+                        "courseNumber": "1A",
+                        "prefix": "MATH",
+                        "prefixParentId": 9987,
+                        "prefixDescription": "Mathematics",
+                        "departmentParentId": 9010,
+                        "department": "Mathematics",
+                        "begin": "F1990",
+                        "end": "",
+                        "minUnits": 4.0,
+                        "maxUnits": 4.0,
+                        "pathways": [
+                            {
+                                "pathwayName": "Business Administration",
+                                "pathwayId": 4,
+                                "pathwayCode": "Business-Administration",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 14,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Computer Science",
+                                "pathwayId": 8,
+                                "pathwayCode": "Computer-Science",
+                                "expectationName": "C4-Single Var. Calc.",
+                                "expectationId": 37,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Economics",
+                                "pathwayId": 9,
+                                "pathwayCode": "Economics",
+                                "expectationName": "C3-Calculus",
+                                "expectationId": 45,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Biochemistry",
+                                "pathwayId": 2,
+                                "pathwayCode": "Biochemistry",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 6,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Molecular Biology",
+                                "pathwayId": 16,
+                                "pathwayCode": "Molecular-Biology",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 83,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Biology",
+                                "pathwayId": 3,
+                                "pathwayCode": "Biology",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 10,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Cell Biology",
+                                "pathwayId": 5,
+                                "pathwayCode": "Cell-Biology",
+                                "expectationName": "C3-Single Var. Calc.",
+                                "expectationId": 22,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Chemistry",
+                                "pathwayId": 6,
+                                "pathwayCode": "Chemistry",
+                                "expectationName": "C4-Calculus",
+                                "expectationId": 27,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mathematics",
+                                "pathwayId": 14,
+                                "pathwayCode": "Mathematics",
+                                "expectationName": "C1-Single Var. Calc. Seq.",
+                                "expectationId": 66,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Mechanical Engineering",
+                                "pathwayId": 15,
+                                "pathwayCode": "Mechanical-Engineering",
+                                "expectationName": "C1-Single Var. Calc.",
+                                "expectationId": 71,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Physics",
+                                "pathwayId": 18,
+                                "pathwayCode": "Physics",
+                                "expectationName": "C2-Calculus",
+                                "expectationId": 91,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            },
+                            {
+                                "pathwayName": "Psychology",
+                                "pathwayId": 20,
+                                "pathwayCode": "Psychology",
+                                "expectationName": "C3-Calculus I",
+                                "expectationId": 102,
+                                "subexpectationName": null,
+                                "subexpectationId": 0
+                            }
+                        ]
+                    },
+                    "visibleCrossListedCourses": [],
+                    "courseAttributes": [],
+                    "sendingArticulation": {
+                        "noArticulationReason": null,
+                        "deniedCourses": [],
+                        "items": [
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 307985,
+                                        "courseTitle": "Analytic Geometry and Calculus I",
+                                        "courseNumber": "3A",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 5.0,
+                                        "maxUnits": 5.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 0,
+                                "type": "CourseGroup"
+                            },
+                            {
+                                "courseConjunction": "And",
+                                "items": [
+                                    {
+                                        "visibleCrossListedCourses": [],
+                                        "requisites": [],
+                                        "attributes": [],
+                                        "courseIdentifierParentId": 309457,
+                                        "courseTitle": "Analytic Geometry and Calculus I Honors",
+                                        "courseNumber": "3AH",
+                                        "prefix": "MATH",
+                                        "prefixParentId": 10036,
+                                        "prefixDescription": "Mathematics",
+                                        "departmentParentId": 9050,
+                                        "department": "Mathematics",
+                                        "begin": "F2018",
+                                        "end": "",
+                                        "minUnits": 5.0,
+                                        "maxUnits": 5.0,
+                                        "pathways": [],
+                                        "publishedCourseIdentifierYearTermId": null,
+                                        "position": 0,
+                                        "type": "Course"
+                                    }
+                                ],
+                                "attributes": [],
+                                "position": 1,
+                                "type": "CourseGroup"
+                            }
+                        ],
+                        "courseGroupConjunctions": [
+                            {
+                                "id": "308ec399-39b5-4f51-710f-08dcb87db3b0",
+                                "sendingArticulationId": "5f346c0c-68ec-49cb-addf-08dcb87d885e",
+                                "groupConjunction": "Or",
+                                "sendingCourseGroupBeginPosition": 0,
+                                "sendingCourseGroupEndPosition": 1
+                            }
+                        ],
+                        "type": "SendingArticulation",
+                        "attributes": []
+                    },
+                    "templateOverrides": [],
+                    "attributes": [],
+                    "receivingAttributes": []
+                },
+                "receivingAttributes": {
+                    "type": "Course",
+                    "courseAttributes": [],
+                    "attributes": []
+                }
+            }
+        ],
+        "catalogYear": "{\"receivingCatalogYearBegin\":2024,\"receivingCatalogYearEnd\":2025,\"sendingCatalogYearBegin\":2024,\"sendingCatalogYearEnd\":2025}"
+    },
+    "validationFailure": null,
+    "isSuccessful": true
+}
