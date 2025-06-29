@@ -1,10 +1,8 @@
 # UC Berkeley Transfer Equivalency Reverse Search
 
-This project was originally forked from [ccc_transfers](https://github.com/jacobtbigham/ccc_transfers). Many thanks to Jacob Bigham for creating this foundational tool!
-
 ## Project Overview
 
-[Assist.org](https://www.assist.org) is an essential resource for UC Berkeley students, providing officially approved course equivalencies between California Community Colleges (CCCs) and UC/CSU systems. However, the site only allows searching one CCC-to-UC articulation agreement at a time, making it tedious to find equivalent courses across **100+** articulation agreements.This project aims to remedy this issue by retrieving all articulated courses for a specific UC course across multiple community colleges at once.
+[Assist.org](https://www.assist.org) is an essential resource for UC Berkeley students, providing officially approved course equivalencies between California Community Colleges (CCCs) and UC/CSU systems. However, the site only allows searching one CCC-to-UC articulation agreement at a time, making it tedious to find equivalent courses across **100+** articulation agreements.This projects aims to remidate this issue by accessing all articulted courses for a specific course at once.
 
 ### The Problem
 
