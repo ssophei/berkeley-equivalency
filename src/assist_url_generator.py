@@ -1,4 +1,3 @@
-# assist_url_generator.py
 import json
 from urllib.parse import quote
 from typing import List, Dict, Any

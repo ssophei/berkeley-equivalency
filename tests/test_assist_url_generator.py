@@ -8,38 +8,6 @@ from assist_url_generator import (
     generate_all_assist_urls
 )
 
-
-@pytest.fixture
-def sample_institutions_json():
-    """Sample institutions data for testing."""
-    return json.dumps([
-        {
-            "id": 1,
-            "names": [{"name": "California Maritime Academy"}],
-            "isCommunityCollege": False,
-            "category": 0
-        },
-        {
-            "id": 2,
-            "names": [{"name": "Evergreen Valley College"}],
-            "isCommunityCollege": True,
-            "category": 2
-        },
-        {
-            "id": 3,
-            "names": [{"name": "Los Angeles City College"}],
-            "isCommunityCollege": True,
-            "category": 2
-        },
-        {
-            "id": 7,
-            "names": [{"name": "University of California, San Diego"}],
-            "isCommunityCollege": False,
-            "category": 1
-        }
-    ])
-
-
 @pytest.fixture
 def sample_institutions_list():
     """Sample institutions list for testing."""
@@ -69,6 +37,14 @@ def sample_institutions_list():
             "category": 1
         }
     ]
+
+@pytest.fixture
+def sample_institutions_json():
+    """Sample institutions data for testing."""
+    return json.dumps(sample_institutions_list())
+
+
+
 
 
 class TestLoadInstitutions:
