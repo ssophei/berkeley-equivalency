@@ -39,9 +39,9 @@ def sample_institutions_list():
     ]
 
 @pytest.fixture
-def sample_institutions_json():
+def sample_institutions_json(sample_institutions_list):
     """Sample institutions data for testing."""
-    return json.dumps(sample_institutions_list())
+    return json.dumps(sample_institutions_list)
 
 
 
