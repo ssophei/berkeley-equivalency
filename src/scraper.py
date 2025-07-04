@@ -333,22 +333,22 @@ async def scrape_url(url: str, receiving_institution_name: str, sending_institut
     ### Returns:
         dict: The processed data from the scraped page.
     """
-    playwright = await async_playwright().start()
-    browser = await playwright.chromium.launch(headless=True)
-    page = await browser.new_page()
-    await page.goto(url, wait_until='networkidle')
-    await page.wait_for_selector('.articRow') # wait until at least one articRow is loaded
-    
-    content = await page.content()
-    soup = BeautifulSoup(content, 'lxml')
-    # print(f"Content: \n {soup.prettify()}")
-    scraper = Scraper(url, receiving_institution_name, sending_institution_name)
-    try:
-        data = scraper.process_page(soup)
-        return data
-    except ValueError as e:
-        print(f"Error processing page: {e}")
-        raise
+    async with async_playwright() as playwright:
+        browser = await playwright.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto(url, wait_until='networkidle')
+        await page.wait_for_selector('.articRow') # wait until at least one articRow is loaded
+        
+        content = await page.content()
+        soup = BeautifulSoup(content, 'lxml')
+        # print(f"Content: \n {soup.prettify()}")
+        scraper = Scraper(url, receiving_institution_name, sending_institution_name)
+        try:
+            data = scraper.process_page(soup)
+            return data
+        except ValueError as e:
+            print(f"Error processing page: {e}")
+            raise
     
 if __name__ == "__main__":
     import asyncio
