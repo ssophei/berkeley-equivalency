@@ -2,29 +2,38 @@ import os
 from playwright.async_api import async_playwright
 import json
 import asyncio
+import json
+from typing import Any, Union
 
-def unwrap_nested_json(data):
+def unwrap_nested_json(data: Any) -> dict | list:
     """
     Recursively unwraps nested JSON strings within a Python dictionary or list.
+    Only returns a dict or list at the top level.
     """
-    if isinstance(data, dict):
-        return {k: unwrap_nested_json(v) for k, v in data.items()}
-    elif isinstance(data, list):
-        return [unwrap_nested_json(elem) for elem in data]
-    elif isinstance(data, str):
-        try:
-            # Attempt to parse the string as JSON
-            parsed_data = json.loads(data)
-            # If successful, recursively unwrap the newly parsed data
-            return unwrap_nested_json(parsed_data)
-        except json.JSONDecodeError:
-            # If it's not valid JSON, just return the string as is
-            return data
-    else:
-        # For other data types (int, float, bool, None), return as is
-        return data
 
-async def intercept(url):
+    def _unwrap(val: Any) -> Any:
+        if isinstance(val, dict):
+            return {k: _unwrap(v) for k, v in val.items()}
+        elif isinstance(val, list):
+            return [_unwrap(elem) for elem in val]
+        elif isinstance(val, str):
+            try:
+                parsed = json.loads(val)
+                return _unwrap(parsed)
+            except json.JSONDecodeError:
+                return val
+        else:
+            return val
+
+    unwrapped = _unwrap(data)
+
+    # Only allow top-level return of dict or list for consistency
+    if isinstance(unwrapped, (dict, list)):
+        return unwrapped
+    else:
+        raise TypeError("Top-level data must unwrap to a dict or list")
+
+async def intercept(url) -> dict:
     match_substring = 'Agreements?Key='
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -36,7 +45,9 @@ async def intercept(url):
 
         response = await response_info.value
         json_data = await response.json()
+
         parsed_data = unwrap_nested_json(json_data)
+        assert isinstance(parsed_data, dict)  # type: ignore
 
         await browser.close()
         print(json.dumps(parsed_data, indent=4))
