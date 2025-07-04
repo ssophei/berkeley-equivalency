@@ -18,7 +18,7 @@ def institutions_json():
 def expected_urls():
     """Load the authoritative list of URLs that were previously generated and
     stored in assist_urls.txt. Each line is one URL."""
-    url_lines = (Path("assist_urls.txt").read_text().splitlines())
+    url_lines = (Path("tests/assist_urls.txt").read_text().splitlines())
     # Strip empty lines (defensive)
     return [u.strip() for u in url_lines if u.strip()]
 
