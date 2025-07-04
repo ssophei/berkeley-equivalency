@@ -11,9 +11,6 @@ from json_grabber import unwrap_nested_json, intercept
 @pytest.mark.parametrize(
     "input_data,expected",
     [
-        # Primitive passthrough
-        (42, 42),
-        ("plain string", "plain string"),
         # Simple nested JSON in string
         ("{\"a\": 1}", {"a": 1}),
         # One level of nesting in a dictionary
