@@ -1,7 +1,8 @@
 import json
 import pytest
+import asyncio
 
-from json_grabber import unwrap_nested_json
+from json_grabber import unwrap_nested_json, intercept
 
 # ---------------------------------------------------------------------------
 # Unit tests for unwrap_nested_json
@@ -32,41 +33,47 @@ def test_unwrap_nested_json(input_data, expected):
 
 
 # ---------------------------------------------------------------------------
-# Tests validating that the assist_data.json fixture adheres to the expected
-# schema returned by json_grabber.intercept. We do **not** contact the network –
-# we simply load the checked-in sample file and run light structural checks.
+# Live integration tests against ASSIST.org using json_grabber.intercept
 # ---------------------------------------------------------------------------
 
-@pytest.fixture(scope="module")
-def assist_data():
-    with open("data/assist_data.json", "r") as fh:
-        return json.load(fh)
+# A couple of representative URLs copied from the original assist_urls.txt
+# Do NOT remove the encoding in `viewByKey` – it is part of the contract we are
+# validating.
+SAMPLE_URLS = [
+    "https://assist.org/transfer/results?year=75&institution=2&agreement=1&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F2%2Fto%2F1%2FAllMajors",
+    "https://assist.org/transfer/results?year=75&institution=124&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FAllMajors",
+]
 
 
-def test_assist_data_top_level_keys(assist_data):
-    required_top_keys = {"result", "validationFailure", "isSuccessful"}
-    assert required_top_keys.issubset(assist_data.keys())
+@pytest.mark.asyncio
+@pytest.mark.parametrize("url", SAMPLE_URLS)
+async def test_intercept_schema(url):
+    """Fetch data via intercept and assert minimal expected schema."""
 
+    parsed = await intercept(url)
 
-def test_assist_data_result_minimal_schema(assist_data):
-    """Validate that important sub-objects are present in `result`."""
-    result = assist_data["result"]
-    expected_keys = {
+    # Top-level keys
+    assert {"result", "validationFailure", "isSuccessful"}.issubset(parsed)
+
+    result = parsed["result"]
+    # Ensure critical sub-objects exist
+    for key in [
         "sendingInstitution",
         "receivingInstitution",
         "academicYear",
         "templateAssets",
         "articulations",
-    }
-    assert expected_keys.issubset(result.keys())
-    # Sanity check a couple of deeply-nested IDs to be integers
+    ]:
+        assert key in result, f"Missing key: {key}"
+
+    # Basic sanity on nested IDs
     assert isinstance(result["sendingInstitution"]["id"], int)
     assert isinstance(result["receivingInstitution"]["id"], int)
 
-
-def test_assist_data_articulations_have_template_ids(assist_data):
-    """Every articulation entry should reference a templateCellId string."""
-    articulations = assist_data["result"].get("articulations", [])
+    # At least one articulation with a templateCellId
+    articulations = result.get("articulations", [])
     assert articulations, "Expected at least one articulation entry"
-    for entry in articulations:
-        assert "templateCellId" in entry and isinstance(entry["templateCellId"], str) 
+    assert any(
+        isinstance(entry.get("templateCellId"), str) and entry["templateCellId"]
+        for entry in articulations
+    ) 

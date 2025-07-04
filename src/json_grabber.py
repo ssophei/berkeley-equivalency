@@ -3,7 +3,7 @@ from playwright.async_api import async_playwright
 import json
 import asyncio
 
-def unwrap_nested_json(data):
+def unwrap_nested_json(data) -> dict | list:
     """
     Recursively unwraps nested JSON strings within a Python dictionary or list.
     """
@@ -18,13 +18,13 @@ def unwrap_nested_json(data):
             # If successful, recursively unwrap the newly parsed data
             return unwrap_nested_json(parsed_data)
         except json.JSONDecodeError:
-            # If it's not valid JSON, just return the string as is
-            return data
+            # If it's not valid JSON, raise an error
+            raise ValueError(f"Invalid JSON string: {data}")
     else:
-        # For other data types (int, float, bool, None), return as is
-        return data
+        # For other data types (int, float, bool, None), raise an error
+        raise ValueError(f"Invalid data type: {type(data)}")
 
-async def intercept(url):
+async def intercept(url) -> dict:
     match_substring = 'Agreements?Key='
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
@@ -36,7 +36,9 @@ async def intercept(url):
 
         response = await response_info.value
         json_data = await response.json()
+
         parsed_data = unwrap_nested_json(json_data)
+        assert isinstance(parsed_data, dict)  # type: ignore
 
         await browser.close()
         print(json.dumps(parsed_data, indent=4))
