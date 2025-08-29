@@ -5,7 +5,7 @@ import json
 
 @pytest.fixture
 def return_json_for_de_anze_to_berk_aero():
-    with open("tests/expected_data.json", "r") as file:
+    with open("tests/data/expected_data.json", "r") as file:
         data = json.load(file)
     return data["de_anze_to_berk_aero"]
 

@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.Python
+env/
+.build/
+.pytest_cache/
+.git
+.gitignore
+.venv/
+preedit_codebase.zip
+assist-equilancy.zip 
