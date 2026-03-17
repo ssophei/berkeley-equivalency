@@ -3786,6 +3786,10 @@
         "beginId": 75,
         "termTypeAcademicYears": [
             {
+                "termType": 0,
+                "fromYear": 2025
+            },
+            {
                 "termType": 1,
                 "fromYear": 2024
             }

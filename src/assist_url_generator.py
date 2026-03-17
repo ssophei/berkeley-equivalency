@@ -73,7 +73,7 @@ def generate_assist_url(year: int, ccc_id: int, dest_id: int) -> str:
     return url
 
 
-def generate_all_assist_urls(institutions_json: str, year: int = 75) -> List[str]:
+def generate_all_assist_urls(institutions_json: str, year: int = 76) -> List[str]:
     """
     Generate all possible ASSIST.org URLs from CCCs to CSU/UC institutions.
     
@@ -112,7 +112,7 @@ def main():
     university_count = len(filter_universities(institutions))
     
     print(f"Generated {len(urls)} ASSIST.org URLs")
-    print(f"From {ccc_count} Community Colleges to {university_count} Universities")
+    print(f"From {ccc_count} Community Colleges to {university_count} University")
     print(f"Expected total: {ccc_count * university_count}")
     
     # Print first few URLs as examples

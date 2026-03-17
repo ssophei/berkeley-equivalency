@@ -1,6 +1,6 @@
 import pytest
 import json
-from assist_url_generator import (
+from berkeley_url_generator import (
     load_institutions,
     filter_community_colleges,
     filter_universities,

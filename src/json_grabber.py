@@ -2,8 +2,9 @@ import os
 from playwright.async_api import async_playwright
 import json
 import asyncio
-import json
-from typing import Any, Union
+from typing import Any
+
+SEM = asyncio.Semaphore(3)
 
 def unwrap_nested_json(data: Any) -> dict | list:
     """
@@ -37,11 +38,12 @@ async def intercept(url) -> dict:
     match_substring = 'Agreements?Key='
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
+        
         page = await browser.new_page()
 
         # Wait for the specific network response while navigating to the page.
-        async with page.expect_response(lambda r: match_substring in r.url, timeout=10000) as response_info:
-            await page.goto(url, wait_until='networkidle')
+        async with page.expect_response(lambda r: match_substring in r.url, timeout=20000) as response_info:
+            await page.goto(url, wait_until='domcontentloaded')
 
         response = await response_info.value
         json_data = await response.json()
@@ -52,16 +54,23 @@ async def intercept(url) -> dict:
         await browser.close()
         print(json.dumps(parsed_data, indent=4))
         
-        # print for testing
-        # filename = 'data/assist_data.json'
-        # os.makedirs(os.path.dirname(filename), exist_ok=True)
-        # with open(filename, 'w') as f:
-        #     json.dump(parsed_data, f, indent=4)
-        # print(f"Data saved to {filename}")
-
         return parsed_data
 
-if __name__ == '__main__':
-    url: str = 'https://assist.org/transfer/results?year=75&institution=124&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=major&viewSendingAgreements=false&viewByKey=75%2F124%2Fto%2F79%2FMajor%2F648bdbf3-f87d-4a4e-7e0b-08dcb87d5deb'
-    result = asyncio.run(intercept(url))
-    print(result)
+async def main():
+    with open("data/urls.json") as f:
+        urls = json.load(f)
+
+    i = 1
+    start = 0
+    urls = urls[start:]
+    for url in urls:
+        data = await intercept(url)
+        filename = f"data/articulations/assist_data_{i}"
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+        with open(filename, 'w') as file:
+            json.dump(data, file, indent=4)
+        print(f"Agreement saved to {filename}")
+        i += 1
+
+if __name__ == "__main__":
+    asyncio.run(main())

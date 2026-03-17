@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pytest
 
-from assist_url_generator import generate_all_assist_urls
+from berkeley_url_generator import generate_all_assist_urls
 
 DATA_DIR = Path("data")
 
