@@ -23,7 +23,7 @@ def get_ids() -> List[dict]:
 
 def get_institutions_with_agreements(school_id: int) -> List[dict]:
     """
-    Function taken and modified from Jacob T Binghams pdfgrabber.py `get_agreements` function.
+    Function taken and modified from Jacob T Bingham's pdfgrabber.py `get_agreements` function.
     
     Args:
         school_id (int): The ID of the institution to fetch agreements for.

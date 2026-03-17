@@ -16,13 +16,14 @@ dependencies = [
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+asyncio_mode = "auto"
 
 [tool.ruff]
 line-length = 88                    # Match Black's default
 target-version = "py312"           # Set to your lowest supported Python version
-include = ["src/scraper.py"]       # change this later when we delete the old refrence code
+include = ["src/scraper.py"]       # change this later when we delete the old reference code
 
-[tool.ruff.lint]
+# Lint configuration
 select = [
     "E",  # pycodestyle (style errors)
     "F",  # pyflakes (unused imports, undefined names)
@@ -32,10 +33,10 @@ select = [
     "C90",# mccabe (complexity checking)
     "SIM",# simplify (suggest simpler code)
     "TID",# tidy imports (like `typing`)
-    "TCH",  # type-import hygiene
     "PYI"   # type correctness checking
 ]
 
+# Rules to ignore
 ignore = [
     "E501",  # Ignore line-too-long (if using Black)
     "B008",  # Don't warn on function default as mutable (can be noisy in tests)
