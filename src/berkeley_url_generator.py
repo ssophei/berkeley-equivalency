@@ -2,7 +2,7 @@ import json
 from urllib.parse import quote
 import os
 from typing import List, Dict, Any
-
+import timing
 
 def load_institutions(json_data: str) -> List[Dict[str, Any]]:
     """
@@ -41,7 +41,7 @@ def generate_assist_url(year: int, ccc_id: int, dest_id: int) -> str:
     Returns:
         Complete ASSIST.org URL
     """
-    view_by_key = f"{year}/{ccc_id}/to/{dest_id}/AllMajors"
+    view_by_key = f"{year}/{ccc_id}/to/{dest_id}/AllSendingPrefixes"
     encoded_view_by_key = quote(view_by_key, safe='')
     
     url = (
@@ -52,8 +52,8 @@ def generate_assist_url(year: int, ccc_id: int, dest_id: int) -> str:
         f"agreementType=to&"
         f"viewAgreementsOptions=true&"
         f"view=agreement&"
-        f"viewBy=major&"
-        f"viewSendingAgreements=false&"
+        f"viewBy=prefix&"
+        f"viewSendingAgreements=true&"
         f"viewByKey={encoded_view_by_key}"
     )
     

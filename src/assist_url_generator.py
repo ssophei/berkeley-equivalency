@@ -54,7 +54,7 @@ def generate_assist_url(year: int, ccc_id: int, dest_id: int) -> str:
     Returns:
         Complete ASSIST.org URL
     """
-    view_by_key = f"{year}/{ccc_id}/to/{dest_id}/AllMajors"
+    view_by_key = f"{year}/{ccc_id}/to/{dest_id}/AllSendingPrefixes"
     encoded_view_by_key = quote(view_by_key, safe='')
     
     url = (
@@ -65,13 +65,12 @@ def generate_assist_url(year: int, ccc_id: int, dest_id: int) -> str:
         f"agreementType=to&"
         f"viewAgreementsOptions=true&"
         f"view=agreement&"
-        f"viewBy=major&"
-        f"viewSendingAgreements=false&"
+        f"viewBy=prefix&"
+        f"viewSendingAgreements=true&"
         f"viewByKey={encoded_view_by_key}"
     )
     
     return url
-
 
 def generate_all_assist_urls(institutions_json: str, year: int = 76) -> List[str]:
     """
@@ -112,7 +111,7 @@ def main():
     university_count = len(filter_universities(institutions))
     
     print(f"Generated {len(urls)} ASSIST.org URLs")
-    print(f"From {ccc_count} Community Colleges to {university_count} University")
+    print(f"From {ccc_count} Community Colleges to {university_count} Universities")
     print(f"Expected total: {ccc_count * university_count}")
     
     # Print first few URLs as examples

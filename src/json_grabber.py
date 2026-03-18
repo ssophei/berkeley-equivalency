@@ -3,6 +3,7 @@ from playwright.async_api import async_playwright
 import json
 import asyncio
 from typing import Any
+import timing
 
 SEM = asyncio.Semaphore(3)
 
@@ -33,44 +34,64 @@ def unwrap_nested_json(data: Any) -> dict | list:
         return unwrapped
     else:
         raise TypeError("Top-level data must unwrap to a dict or list")
+    
 
-async def intercept(url) -> dict:
+async def intercept(browser, url) -> dict:
     match_substring = 'Agreements?Key='
+    context = await browser.new_context()
+    page = await context.new_page()
+
+    # Wait for the specific network response while navigating to the page.
+    async with page.expect_response(lambda r: match_substring in r.url, timeout=20000) as response_info:
+        await page.goto(url, wait_until='domcontentloaded')
+
+    response = await response_info.value
+    json_data = await response.json()
+
+    parsed_data = unwrap_nested_json(json_data)
+    assert isinstance(parsed_data, dict)  # type: ignore
+
+    await context.close()        
+    return parsed_data
+
+
+async def worker(browser, url, i, sem):
+    async with sem:
+        data = await intercept(browser, url)
+        filename = f"data/articulations/assist_data_{i}"
+        os.makedirs(os.path.dirname(filename), exist_ok=True)
+
+        with open(filename, 'w') as file:
+            json.dump(data, file, indent=4)
+
+        print(f"Agreement saved to {filename}")
+        
+
+async def single_url(url, i):
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
-        
-        page = await browser.new_page()
-
-        # Wait for the specific network response while navigating to the page.
-        async with page.expect_response(lambda r: match_substring in r.url, timeout=20000) as response_info:
-            await page.goto(url, wait_until='domcontentloaded')
-
-        response = await response_info.value
-        json_data = await response.json()
-
-        parsed_data = unwrap_nested_json(json_data)
-        assert isinstance(parsed_data, dict)  # type: ignore
-
-        await browser.close()
-        print(json.dumps(parsed_data, indent=4))
-        
-        return parsed_data
-
-async def main():
-    with open("data/urls.json") as f:
-        urls = json.load(f)
-
-    i = 1
-    start = 0
-    urls = urls[start:]
-    for url in urls:
-        data = await intercept(url)
-        filename = f"data/articulations/assist_data_{i}"
+        data = await intercept(browser, url)
+        filename = f"data/articulations/assist_data{i}.json"
         os.makedirs(os.path.dirname(filename), exist_ok=True)
         with open(filename, 'w') as file:
             json.dump(data, file, indent=4)
         print(f"Agreement saved to {filename}")
-        i += 1
+        await browser.close()   
+
+
+async def main(start):
+    with open("data/urls.json") as f:
+        urls = json.load(f)
+    urls = urls[start:]
+
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        tasks = [
+            worker(browser, url, i+start+1, SEM)
+            for i, url in enumerate(urls)
+        ]
+        await asyncio.gather(*tasks)
+        await browser.close()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    asyncio.run(main(0))
