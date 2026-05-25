@@ -68,6 +68,7 @@ def normalize_course(
     normalized = {
         "type": "Course",
         "id": data.get("courseIdentifierParentId"),
+        "course_instance_id": data.get("id"),
         "prefix": clean_text(data.get("prefix")),
         "course_number": clean_text(data.get("courseNumber")),
         "course_key": course_key(data.get("prefix"), data.get("courseNumber")),

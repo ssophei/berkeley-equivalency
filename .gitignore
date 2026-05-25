@@ -1,14 +1,27 @@
 # Python-generated files
-__pycache__
+__pycache__/
 *.py[oc]
 build/
 dist/
 wheels/
 *.egg-info
 
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+.next-dev.log
+tsconfig.tsbuildinfo
+
+# Environment
+.env*.local
+
 # caches
 .ruff_cache/
 .pytest_cache/
+.pytest_tmp*/
+.uv-cache/
 
 # Virtual environments
 .venv
@@ -17,3 +30,8 @@ wheels/
 data/articulations/
 data/normalized/
 data/articulation_failures.json
+
+# db
+*.dump
+*.sql
+/backups

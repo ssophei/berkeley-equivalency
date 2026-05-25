@@ -16,18 +16,18 @@ SELECT
     a.source_file,
     sending.id AS sending_institution_id,
     sending.name AS sending_institution_name,
-    c.id AS receiving_course_id,
-    c.course_key AS berkeley_course,
-    c.title AS berkeley_title,
+    rr.id AS receiving_requirement_id,
+    rr.display_key AS berkeley_course,
+    rr.title AS berkeley_title,
     a.receiving_json,
     a.sending_json
 FROM articulations a
 JOIN academic_years ay ON ay.id = a.academic_year_id
-JOIN courses c ON c.id = a.receiving_course_id
+JOIN receiving_requirements rr ON rr.id = a.receiving_requirement_id
 JOIN institutions sending ON sending.id = a.sending_institution_id
-WHERE c.institution_id = %(receiving_institution_id)s
-  AND c.course_key = %(query)s
-ORDER BY sending.name, c.course_key
+WHERE rr.receiving_institution_id = %(receiving_institution_id)s
+  AND rr.display_key = %(query)s
+ORDER BY sending.name, rr.display_key
 """
 
 
@@ -39,21 +39,21 @@ SELECT
     a.source_file,
     sending.id AS sending_institution_id,
     sending.name AS sending_institution_name,
-    c.id AS receiving_course_id,
-    c.course_key AS berkeley_course,
-    c.title AS berkeley_title,
+    rr.id AS receiving_requirement_id,
+    rr.display_key AS berkeley_course,
+    rr.title AS berkeley_title,
     a.receiving_json,
     a.sending_json
 FROM articulations a
 JOIN academic_years ay ON ay.id = a.academic_year_id
-JOIN courses c ON c.id = a.receiving_course_id
+JOIN receiving_requirements rr ON rr.id = a.receiving_requirement_id
 JOIN institutions sending ON sending.id = a.sending_institution_id
-WHERE c.institution_id = %(receiving_institution_id)s
+WHERE rr.receiving_institution_id = %(receiving_institution_id)s
   AND (
-    c.course_key ILIKE %(pattern)s
-    OR c.title ILIKE %(pattern)s
+    rr.display_key ILIKE %(pattern)s
+    OR rr.title ILIKE %(pattern)s
   )
-ORDER BY c.course_key, sending.name
+ORDER BY rr.display_key, sending.name
 LIMIT %(limit)s
 """
 
