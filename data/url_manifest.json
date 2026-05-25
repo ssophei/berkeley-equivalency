@@ -1,0 +1,1046 @@
+[
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 2,
+    "sending_institution_name": "Evergreen Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=2&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F2%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_002_evergreen-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 3,
+    "sending_institution_name": "Los Angeles City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=3&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F3%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_003_los-angeles-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 4,
+    "sending_institution_name": "College of Marin",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=4&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F4%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_004_college-of-marin_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 5,
+    "sending_institution_name": "College of San Mateo",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=5&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F5%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_005_college-of-san-mateo_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 6,
+    "sending_institution_name": "College of the Sequoias",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=6&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F6%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_006_college-of-the-sequoias_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 8,
+    "sending_institution_name": "Butte College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=8&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F8%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_008_butte-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 9,
+    "sending_institution_name": "Cerro Coso Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=9&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F9%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_009_cerro-coso-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 10,
+    "sending_institution_name": "Columbia College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=10&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F10%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_010_columbia-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 13,
+    "sending_institution_name": "Merritt College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=13&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F13%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_013_merritt-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 14,
+    "sending_institution_name": "Rancho Santiago College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=14&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F14%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_014_rancho-santiago-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 16,
+    "sending_institution_name": "Cuesta College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=16&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F16%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_016_cuesta-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 17,
+    "sending_institution_name": "Merced College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=17&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F17%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_017_merced-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 18,
+    "sending_institution_name": "Las Positas College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=18&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F18%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_018_las-positas-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 19,
+    "sending_institution_name": "Victor Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=19&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F19%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_019_victor-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 20,
+    "sending_institution_name": "Barstow Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=20&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F20%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_020_barstow-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 25,
+    "sending_institution_name": "Los Angeles Trade Technical College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=25&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F25%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_025_los-angeles-trade-technical-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 27,
+    "sending_institution_name": "American River College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=27&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F27%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_027_american-river-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 28,
+    "sending_institution_name": "Contra Costa College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=28&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F28%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_028_contra-costa-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 30,
+    "sending_institution_name": "College of the Desert",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=30&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F30%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_030_college-of-the-desert_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 31,
+    "sending_institution_name": "Los Angeles Harbor College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=31&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F31%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_031_los-angeles-harbor-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 32,
+    "sending_institution_name": "Mission College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=32&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F32%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_032_mission-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 33,
+    "sending_institution_name": "City College of San Francisco",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=33&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F33%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_033_city-college-of-san-francisco_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 34,
+    "sending_institution_name": "Compton Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=34&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F34%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_034_compton-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 35,
+    "sending_institution_name": "Fresno City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=35&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F35%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_035_fresno-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 36,
+    "sending_institution_name": "Kings River College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=36&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F36%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_036_kings-river-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 38,
+    "sending_institution_name": "Shasta College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=38&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F38%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_038_shasta-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 40,
+    "sending_institution_name": "Lake Tahoe Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=40&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F40%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_040_lake-tahoe-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 41,
+    "sending_institution_name": "Cabrillo College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=41&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F41%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_041_cabrillo-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 43,
+    "sending_institution_name": "Glendale Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=43&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F43%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_043_glendale-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 44,
+    "sending_institution_name": "Los Angeles Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=44&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F44%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_044_los-angeles-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 45,
+    "sending_institution_name": "San Diego Miramar College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=45&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F45%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_045_san-diego-miramar-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 47,
+    "sending_institution_name": "Los Angeles Mission College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=47&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F47%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_047_los-angeles-mission-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 48,
+    "sending_institution_name": "Ohlone College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=48&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F48%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_048_ohlone-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 49,
+    "sending_institution_name": "Pasadena City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=49&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F49%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_049_pasadena-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 51,
+    "sending_institution_name": "Foothill College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=51&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F51%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_051_foothill-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 52,
+    "sending_institution_name": "Modesto Junior College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=52&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F52%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_052_modesto-junior-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 53,
+    "sending_institution_name": "Mt. San Jacinto College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=53&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F53%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_053_mt-san-jacinto-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 54,
+    "sending_institution_name": "San Diego City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=54&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F54%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_054_san-diego-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 55,
+    "sending_institution_name": "Golden West College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=55&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F55%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_055_golden-west-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 56,
+    "sending_institution_name": "Palomar College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=56&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F56%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_056_palomar-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 57,
+    "sending_institution_name": "Santa Rosa Junior College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=57&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F57%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_057_santa-rosa-junior-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 58,
+    "sending_institution_name": "Vista Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=58&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F58%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_058_vista-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 61,
+    "sending_institution_name": "Los Medanos College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=61&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F61%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_061_los-medanos-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 62,
+    "sending_institution_name": "Mount San Antonio College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=62&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F62%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_062_mount-san-antonio-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 63,
+    "sending_institution_name": "Palo Verde College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=63&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F63%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_063_palo-verde-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 64,
+    "sending_institution_name": "Rio Hondo College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=64&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F64%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_064_rio-hondo-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 65,
+    "sending_institution_name": "Saddleback College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=65&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F65%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_065_saddleback-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 66,
+    "sending_institution_name": "Santiago Canyon College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=66&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F66%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_066_santiago-canyon-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 67,
+    "sending_institution_name": "West Hills College Coalinga",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=67&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F67%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_067_west-hills-college-coalinga_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 68,
+    "sending_institution_name": "Canada College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=68&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F68%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_068_canada-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 69,
+    "sending_institution_name": "Chaffey College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=69&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F69%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_069_chaffey-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 70,
+    "sending_institution_name": "Crafton Hills College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=70&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F70%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_070_crafton-hills-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 71,
+    "sending_institution_name": "Cypress College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=71&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F71%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_071_cypress-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 72,
+    "sending_institution_name": "Gavilan College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=72&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F72%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_072_gavilan-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 73,
+    "sending_institution_name": "Napa Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=73&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F73%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_073_napa-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 74,
+    "sending_institution_name": "Orange Coast College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=74&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F74%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_074_orange-coast-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 77,
+    "sending_institution_name": "Laney College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=77&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F77%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_077_laney-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 78,
+    "sending_institution_name": "Riverside City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=78&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F78%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_078_riverside-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 80,
+    "sending_institution_name": "West Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=80&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F80%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_080_west-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 82,
+    "sending_institution_name": "Lassen Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=82&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F82%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_082_lassen-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 83,
+    "sending_institution_name": "College of the Redwoods",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=83&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F83%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_083_college-of-the-redwoods_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 84,
+    "sending_institution_name": "Bakersfield College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=84&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F84%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_084_bakersfield-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 86,
+    "sending_institution_name": "Los Angeles Pierce College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=86&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F86%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_086_los-angeles-pierce-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 87,
+    "sending_institution_name": "Oxnard College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=87&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F87%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_087_oxnard-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 90,
+    "sending_institution_name": "Yuba College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=90&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F90%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_090_yuba-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 91,
+    "sending_institution_name": "West Los Angeles College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=91&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F91%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_091_west-los-angeles-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 92,
+    "sending_institution_name": "Santa Barbara City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=92&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F92%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_092_santa-barbara-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 93,
+    "sending_institution_name": "Sierra College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=93&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F93%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_093_sierra-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 94,
+    "sending_institution_name": "Solano Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=94&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F94%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_094_solano-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 95,
+    "sending_institution_name": "Ventura College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=95&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F95%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_095_ventura-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 96,
+    "sending_institution_name": "Chabot College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=96&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F96%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_096_chabot-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 97,
+    "sending_institution_name": "Citrus College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=97&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F97%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_097_citrus-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 99,
+    "sending_institution_name": "Cuyamaca College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=99&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F99%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_099_cuyamaca-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 100,
+    "sending_institution_name": "Mendocino College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=100&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F100%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_100_mendocino-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 101,
+    "sending_institution_name": "San Diego Mesa College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=101&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F101%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_101_san-diego-mesa-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 102,
+    "sending_institution_name": "College of the Siskiyous",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=102&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F102%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_102_college-of-the-siskiyous_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 103,
+    "sending_institution_name": "El Camino College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=103&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F103%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_103_el-camino-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 104,
+    "sending_institution_name": "Cerritos College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=104&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F104%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_104_cerritos-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 105,
+    "sending_institution_name": "Coastline Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=105&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F105%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_105_coastline-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 106,
+    "sending_institution_name": "Grossmont College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=106&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F106%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_106_grossmont-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 107,
+    "sending_institution_name": "Imperial Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=107&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F107%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_107_imperial-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 108,
+    "sending_institution_name": "MiraCosta College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=108&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F108%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_108_miracosta-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 109,
+    "sending_institution_name": "San Joaquin Delta College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=109&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F109%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_109_san-joaquin-delta-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 110,
+    "sending_institution_name": "Allan Hancock College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=110&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F110%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_110_allan-hancock-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 111,
+    "sending_institution_name": "College of Alameda",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=111&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F111%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_111_college-of-alameda_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 112,
+    "sending_institution_name": "Copper Mountain College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=112&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F112%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_112_copper-mountain-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 113,
+    "sending_institution_name": "De Anza College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=113&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F113%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_113_de-anza-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 114,
+    "sending_institution_name": "Diablo Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=114&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F114%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_114_diablo-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 118,
+    "sending_institution_name": "East Los Angeles College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=118&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F118%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_118_east-los-angeles-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 119,
+    "sending_institution_name": "Taft College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=119&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F119%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_119_taft-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 121,
+    "sending_institution_name": "Antelope Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=121&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F121%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_121_antelope-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 122,
+    "sending_institution_name": "Feather River College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=122&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F122%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_122_feather-river-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 123,
+    "sending_institution_name": "Hartnell College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=123&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F123%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_123_hartnell-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 124,
+    "sending_institution_name": "Irvine Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=124&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F124%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_124_irvine-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 125,
+    "sending_institution_name": "Porterville College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=125&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F125%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_125_porterville-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 126,
+    "sending_institution_name": "Sacramento City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=126&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F126%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_126_sacramento-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 127,
+    "sending_institution_name": "Skyline College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=127&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F127%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_127_skyline-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 130,
+    "sending_institution_name": "Los Angeles Southwest College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=130&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F130%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_130_los-angeles-southwest-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 131,
+    "sending_institution_name": "San Bernardino Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=131&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F131%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_131_san-bernardino-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 133,
+    "sending_institution_name": "Monterey Peninsula College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=133&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F133%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_133_monterey-peninsula-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 134,
+    "sending_institution_name": "Fullerton College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=134&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F134%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_134_fullerton-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 135,
+    "sending_institution_name": "Long Beach City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=135&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F135%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_135_long-beach-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 136,
+    "sending_institution_name": "San Jose City College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=136&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F136%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_136_san-jose-city-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 137,
+    "sending_institution_name": "Santa Monica College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=137&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F137%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_137_santa-monica-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 138,
+    "sending_institution_name": "Southwestern College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=138&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F138%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_138_southwestern-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 139,
+    "sending_institution_name": "Moorpark College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=139&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F139%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_139_moorpark-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 140,
+    "sending_institution_name": "College of the Canyons",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=140&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F140%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_140_college-of-the-canyons_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 142,
+    "sending_institution_name": "Cosumnes River College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=142&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F142%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_142_cosumnes-river-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 145,
+    "sending_institution_name": "Folsom Lake College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=145&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F145%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_145_folsom-lake-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 146,
+    "sending_institution_name": "West Hills College Lemoore",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=146&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F146%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_146_west-hills-college-lemoore_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 147,
+    "sending_institution_name": "Woodland Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=147&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F147%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_147_woodland-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 148,
+    "sending_institution_name": "Norco College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=148&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F148%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_148_norco-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 149,
+    "sending_institution_name": "Moreno Valley College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=149&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F149%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_149_moreno-valley-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 150,
+    "sending_institution_name": "Clovis Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=150&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F150%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_150_clovis-community-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 153,
+    "sending_institution_name": "Compton College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=153&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F153%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_153_compton-college_to_079_uc-berkeley.json"
+  },
+  {
+    "academic_year_id": 76,
+    "sending_institution_id": 200,
+    "sending_institution_name": "Madera Community College",
+    "receiving_institution_id": 79,
+    "receiving_institution_name": "University of California, Berkeley",
+    "url": "https://assist.org/transfer/results?year=76&institution=200&agreement=79&agreementType=to&viewAgreementsOptions=true&view=agreement&viewBy=prefix&viewSendingAgreements=true&viewByKey=76%2F200%2Fto%2F79%2FAllSendingPrefixes",
+    "output_file": "year_76_sending_200_madera-community-college_to_079_uc-berkeley.json"
+  }
+]

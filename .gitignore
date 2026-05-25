@@ -15,3 +15,5 @@ wheels/
 
 # data
 data/articulations/
+data/normalized/
+data/articulation_failures.json
